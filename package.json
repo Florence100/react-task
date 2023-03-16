@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix"
   },
   "dependencies": {
     "eslint-config-airbnb-typescript": "^17.0.0",

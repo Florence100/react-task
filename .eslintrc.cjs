@@ -25,8 +25,7 @@ module.exports = {
         'prettier',
     ],
     rules: {
-        rules: {
-            'react/react-in-jsx-scope': 0,
-        }
-    }
-}
+        "prettier/prettier": "error",
+        'react/react-in-jsx-scope': 0,
+    },
+};
