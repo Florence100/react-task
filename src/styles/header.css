@@ -1,0 +1,15 @@
+.header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background-color: #10111a;
+    color: white;
+}
+
+.header__nav {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
