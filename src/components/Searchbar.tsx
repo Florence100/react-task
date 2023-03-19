@@ -1,6 +1,4 @@
 import React from 'react';
-// import Input from './UI/inputs/Input';
-import Button from './UI/buttons/Button';
 import '../styles/searchbar.css';
 import '../styles/inputs.css';
 
@@ -35,11 +33,9 @@ class Searchbar extends React.Component<MyProps, MyState> {
             type="text"
             value={this.state.value}
             className="input"
-            placeholder="Искать по сайту"
+            placeholder="Искать..."
             onChange={this.handleChange}
           />
-          {/* <Input /> */}
-          <Button />
         </form>
       </div>
     );

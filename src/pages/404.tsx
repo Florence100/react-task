@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/404.css';
 
 function NotFound() {
   return (
-    <>
-      <h1>Page 404</h1>
-      <Link to="/">GO HOME</Link>
-    </>
+    <div className="wrapper">
+      <h3>Здесь будет страница 404</h3>
+      <div className="links">
+        <Link to="/">На главную</Link>
+        <Link to="/about">О нас</Link>
+      </div>
+    </div>
   );
 }
 

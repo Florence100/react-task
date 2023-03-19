@@ -20,7 +20,6 @@ html {
 
 a,
 a:visited {
-    color: unset;
     text-decoration: none;
     cursor: pointer;
 }

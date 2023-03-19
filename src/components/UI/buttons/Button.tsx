@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../../styles/buttons.css';
+import './style.css';
 
 function Button() {
   return (
     <button type="submit" className="button">
-      Найти
+      Выбрать
     </button>
   );
 }

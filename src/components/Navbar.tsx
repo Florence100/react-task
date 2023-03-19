@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/header.css';
 
 function Navbar() {
@@ -7,8 +7,18 @@ function Navbar() {
     <header className="header">
       <div className="wrapper">
         <div className="header__nav">
-          <Link to="/">Home</Link>
-          <Link to="about">About as</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? 'header__link-active' : 'header__link')}
+          >
+            Главная
+          </NavLink>
+          <NavLink
+            to="about"
+            className={({ isActive }) => (isActive ? 'header__link-active' : 'header__link')}
+          >
+            О нас
+          </NavLink>
         </div>
       </div>
     </header>
