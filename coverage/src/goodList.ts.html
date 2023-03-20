@@ -1,0 +1,265 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/goodList.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> goodList.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>60/60</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>60/60</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { IGoodsList } from './interfaces';
+&nbsp;
+const goodsList: IGoodsList = [
+  {
+    id: 1,
+    title: 'Si Passione, 30 мл ',
+    description:
+      'Sì Passione — новый аромат от Giorgio Armani, раскрывающий грани образа Sì: это аромат для женщины независимой, очень женственной и свободной. В новой композиции присутствует сочетание, характерное для аромата Sì: ноты нектара черной смородины перекликаются с грушевыми нотами. Верхняя нота аромата — пряный аккорд розового перца, подобный всплеску адреналина. В цветочной ноте сердца слышны прозрачные переливающиеся ароматы лепестков розы в новом исполнении, также присутствуют соблазнительные пудровые отголоски гелиотропа и невероятно женственного переливчатого экстракта жасмина.',
+    price: 358.8,
+    rating: 4.69,
+    brand: 'GIORGIO ARMANI',
+    category: 'Парфюмерная вода',
+    images: [
+      'https://shop.cravt.by/upload/Sh/imageCache/4c1/9fb/c46944df8706d00553bdf5ce5cfa8c33.jpg.webp',
+      'https://shop.cravt.by/upload/Sh/imageCache/498/1c0/839267b4e6dbfdf53417af8118d5f55d.jpg.webp',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Donna, 100 мл',
+    description:
+      'Волнующая и утонченная туалетная вода подчеркивает в облике прекрасных дам главное – женственность, которая не зависит от моды и остается актуальной во все времена. Donna Trussardi в изящном белом флаконе посвящен образу современной женщины, элегантной и чувственной, независимой и сильной и в то же время бесконечно женственной… Компоненты: Юзу, Цедра лимона, Цветы Апельсина, Жасмин, Белая Лилия, Белый Пачули, Кедр, Сандал, Ваниль',
+    price: 329.4,
+    rating: 4.8,
+    brand: 'TRUSSARDI',
+    category: 'Парфюмерная вода',
+    images: [
+      'https://shop.cravt.by/upload/Sh/imageCache/009/c73/7fe360fcdbcd78748d2f2db25e95bea6.jpg.webp',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Omnia Crystalline, 25 мл ',
+    description:
+      'Попробуйте чарующий аромат от Bvlgari – Omnia Crystalline! Неповторимое сочетание компонентов драгоценной композиции идеально дополнит образ молодой романтичной женщины, которая знает себе цену. Легкий шлейф аромата подарит Вам свежесть и душистую сладость. Компоненты: бамбук, японская груша наши, лотос, лист черной смородины, гуаяк, дубовый мох.',
+    price: 182.4,
+    rating: 4.5,
+    brand: 'BVLGARI',
+    category: 'Туалетная вода',
+    images: [
+      'https://shop.cravt.by/upload/Sh/imageCache/9cd/20c/0d2367886b84ac49bcaa42c6c9bf355e.jpg.webp',
+    ],
+  },
+  {
+    id: 4,
+    title: 'Idole, 50 мл',
+    description:
+      'Аромат нового поколения Idôle – объект желания! В основе аромата – «аккорд чистоты», смелый и неординарный. Он раскрывается на обнаженной коже через цветочную дымку, где в главной роли выступает роза из Испарты. Флакон Idôle на данный момент самый тонкий в мире, его толщина всего лишь 15 мм. Гармония пропорций, чувственная выгнутая форма и великолепные линии – это то, что делает флакон по-настоящему современным объектом желания. «Дом Lancôme создал новый роскошный аромат, который стал отражением современной женственности. Lancôme хочет выразить свое восхищение успехами современных женщин и сопровождать их на пути к счастью.» Франсуаза Леманн, Президент Lancôme International',
+    price: 502.02,
+    rating: 4.9,
+    brand: 'LANCOME',
+    category: 'Парфюмерная вода',
+    images: [
+      'https://shop.cravt.by/upload/Sh/imageCache/682/b20/ae687a46da6d68dfe016419871c125c6.jpg.webp',
+      'https://shop.cravt.by/upload/Sh/imageCache/705/a37/e3eda94d6b972cc668decff6bc96a934.jpg.webp',
+    ],
+  },
+];
+&nbsp;
+export default goodsList;
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-03-20T01:25:07.211Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

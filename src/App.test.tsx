@@ -1,32 +1,19 @@
 import { describe, it } from 'vitest';
-import { render, screen } from '@testing-library/react';
-
+import { render } from '@testing-library/react';
 import React from 'react';
-import { MemoryRouter } from 'react-router-dom';
-import { App, WrappedApp } from './App';
+import Home from './pages/Home';
+import About from './pages/About';
+import goodsList from './goodList';
 
 describe('App', () => {
-  it('Renders hello world', () => {
-    // ARRANGE
-    render(<WrappedApp />);
-    // ACT
-    // EXPECT
-    expect(
-      screen.getByRole('heading', {
-        level: 1,
-      })
-    ).toHaveTextContent('Hello World!');
-  });
-  it('Renders not found if invalid path', () => {
-    render(
-      <MemoryRouter initialEntries={['/this-route-does-not-exist']}>
-        <App />
-      </MemoryRouter>
+  it('renders without crashing', () => {
+    const { container } = render(<About />);
+    expect(container.getElementsByTagName('h3')[0]).toHaveTextContent(
+      'Здесь будет страничка о нас'
     );
-    expect(
-      screen.getByRole('heading', {
-        level: 1,
-      })
-    ).toHaveTextContent('Page 404');
+  });
+  it('renders without crashing', () => {
+    const { container } = render(<Home />);
+    expect(container.querySelectorAll('.card')).toHaveLength(goodsList.length);
   });
 });
