@@ -1,0 +1,9 @@
+body {
+    font-size: 16px;
+    background: white;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
