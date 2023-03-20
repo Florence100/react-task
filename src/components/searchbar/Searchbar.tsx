@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/searchbar.css';
-import '../styles/inputs.css';
+import './style.css';
 
 type MyProps = object;
 type MyState = { value: string };

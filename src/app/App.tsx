@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import NotFound from './pages/404';
-import About from './pages/About';
-import Navbar from './components/Navbar';
+import Home from '../pages/Home/Home';
+import NotFound from '../pages/404/404';
+import About from '../pages/About/About';
+import Navbar from '../components/navbar/Navbar';
+import './style.css';
 
 export function App() {
   return (

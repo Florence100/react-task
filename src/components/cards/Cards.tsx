@@ -1,8 +1,7 @@
 import React from 'react';
-import goodsList from '../goodList';
-import OneCard from './OneCard/OneCard';
-
-import '../styles/cards.css';
+import goodsList from '../../data/goodList';
+import OneCard from '../onecard/OneCard';
+import './style.css';
 
 function Cards() {
   const listItems = goodsList.map((good) => (

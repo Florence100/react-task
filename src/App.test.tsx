@@ -1,9 +1,9 @@
 import { describe, it } from 'vitest';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import goodsList from './goodList';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import goodsList from './data/goodList';
 
 describe('App', () => {
   it('renders without crashing', () => {

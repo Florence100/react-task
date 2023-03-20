@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { IGood } from '../../interfaces';
+import { IGood } from '../../interfaces/interfaces';
 import Button from '../UI/buttons/Button';
 
 function OneCard(props: IGood) {
