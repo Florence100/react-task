@@ -19,6 +19,12 @@ function Navbar() {
           >
             О нас
           </NavLink>
+          <NavLink
+            to="user"
+            className={({ isActive }) => (isActive ? 'header__link-active' : 'header__link')}
+          >
+            Форма
+          </NavLink>
         </div>
       </div>
     </header>

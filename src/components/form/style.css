@@ -1,0 +1,8 @@
+.form-questions {
+    width: 450px;
+    min-height: 450px;
+    border-radius: 5px;
+    border: 1px solid #a7355d;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}

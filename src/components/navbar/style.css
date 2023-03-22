@@ -6,7 +6,7 @@
 }
 
 .header__nav {
-    width: 170px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
