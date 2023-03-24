@@ -1,8 +1,8 @@
 import { describe, it } from 'vitest';
 import { render } from '@testing-library/react';
 import React from 'react';
-import Home from './pages/home/Home';
-import About from './pages/about/About';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import UserData from './pages/userdata/UserData';
 import goodsList from './data/goodList';
 
