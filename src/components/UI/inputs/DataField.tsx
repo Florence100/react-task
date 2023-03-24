@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-type INameFieldProp = {
+type DataFieldProp = {
   value: string;
   ref: React.RefObject<HTMLInputElement>;
 };
@@ -11,15 +11,11 @@ type NameFieldState = {
   valid: boolean;
 };
 
-class NameField extends React.Component<INameFieldProp, NameFieldState> {
-  pattern: string;
-
-  constructor(props: INameFieldProp) {
+class DataField extends React.Component<DataFieldProp, NameFieldState> {
+  constructor(props: DataFieldProp) {
     super(props);
     const isValid = this.validate(props.value);
     this.state = { value: props.value, valid: isValid };
-    this.pattern =
-      '([А-Я]{1}[а-яё]{1,19}[ ][А-Я]{1}[а-яё]{1,19}$)|([A-Z]{1}[a-z]{1,19}[ ][A-Z]{1}[a-z]{1,19}$)';
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -31,10 +27,15 @@ class NameField extends React.Component<INameFieldProp, NameFieldState> {
 
   validate(val: string) {
     if (val) {
-      if (val.match(this.pattern) === null) {
+      const today = new Date();
+      const formValue = new Date(val);
+      if (formValue.getTime() === today.getTime()) {
+        return true;
+      } else if (formValue.getTime() > today.getTime()) {
+        return true;
+      } else {
         return false;
       }
-      return true;
     }
     return false;
   }
@@ -43,7 +44,7 @@ class NameField extends React.Component<INameFieldProp, NameFieldState> {
     return (
       <input
         className="input input_text"
-        type="text"
+        type="date"
         value={this.state.value}
         onChange={this.handleChange}
       />
@@ -51,4 +52,4 @@ class NameField extends React.Component<INameFieldProp, NameFieldState> {
   }
 }
 
-export default NameField;
+export default DataField;

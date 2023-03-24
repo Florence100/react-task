@@ -31,7 +31,7 @@
     "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
-    "noImplicitAny": true,
+    // "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
