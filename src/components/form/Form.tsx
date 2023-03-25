@@ -32,11 +32,11 @@ class Form extends React.Component<MyProps, MyState> {
       <form className="form-questions" onSubmit={this.handleSubmit}>
         <label>
           Ваши имя и фамилия:
-          <NameField value="" ref={this.nameField} />
+          <NameField value="" nameFieldRef={this.nameField}/>
         </label>
         <label>
           Выберите дату доставки:
-          <DataField value="" ref={this.dataField} />
+          <DataField value="" dataFieldRef={this.dataField} />
         </label>
         <input type="submit" value="Отправить" />
       </form>

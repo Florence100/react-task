@@ -3,7 +3,7 @@ import './style.css';
 
 type INameFieldProp = {
   value: string;
-  ref: React.RefObject<HTMLInputElement>;
+  nameFieldRef: React.RefObject<HTMLInputElement>;
 };
 
 type NameFieldState = {
@@ -42,6 +42,7 @@ class NameField extends React.Component<INameFieldProp, NameFieldState> {
   render() {
     return (
       <input
+        ref={this.props.nameFieldRef}
         className="input input_text"
         type="text"
         value={this.state.value}
