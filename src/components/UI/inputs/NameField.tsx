@@ -13,20 +13,24 @@ type NameFieldState = {
 
 class NameField extends React.Component<INameFieldProp, NameFieldState> {
   pattern: string;
+  isValid: boolean;
+  castomAttr: { 'data-valid': boolean };
 
   constructor(props: INameFieldProp) {
     super(props);
-    const isValid = this.validate(props.value);
-    this.state = { value: props.value, valid: isValid };
+    this.isValid = this.validate(props.value);
+    this.state = { value: props.value, valid: this.isValid };
     this.pattern =
       '([А-Я]{1}[а-яё]{1,19}[ ][А-Я]{1}[а-яё]{1,19}$)|([A-Z]{1}[a-z]{1,19}[ ][A-Z]{1}[a-z]{1,19}$)';
     this.handleChange = this.handleChange.bind(this);
+    this.castomAttr = { 'data-valid': this.isValid };
   }
 
   handleChange(e: { target: { value: string } }) {
     const val = e.target.value;
-    const isValid = this.validate(val);
-    this.setState({ value: val, valid: isValid });
+    this.isValid = this.validate(val);
+    this.setState({ value: val, valid: this.isValid });
+    this.castomAttr = { 'data-valid': this.isValid };
   }
 
   validate(val: string) {
@@ -47,6 +51,7 @@ class NameField extends React.Component<INameFieldProp, NameFieldState> {
         type="text"
         value={this.state.value}
         onChange={this.handleChange}
+        {...this.castomAttr}
       />
     );
   }

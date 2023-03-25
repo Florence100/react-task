@@ -1,20 +1,20 @@
 import React from 'react';
 import './style.css';
 
-type DataFieldProp = {
+type DropDownProp = {
   value: string;
-  dataFieldRef: React.RefObject<HTMLInputElement>;
+  dropDownRef: React.RefObject<HTMLSelectElement>;
 };
 
-type NameFieldState = {
+type DropDownState = {
   value: string;
   valid: boolean;
 };
 
-class DataField extends React.Component<DataFieldProp, NameFieldState> {
+class DropDown extends React.Component<DropDownProp, DropDownState> {
   isValid: boolean;
   castomAttr: { 'data-valid': boolean };
-  constructor(props: DataFieldProp) {
+  constructor(props: DropDownProp) {
     super(props);
     this.isValid = this.validate(props.value);
     this.state = { value: props.value, valid: this.isValid };
@@ -31,31 +31,27 @@ class DataField extends React.Component<DataFieldProp, NameFieldState> {
 
   validate(val: string) {
     if (val) {
-      const today = new Date();
-      const formValue = new Date(val);
-      if (formValue.getTime() === today.getTime()) {
-        return true;
-      } else if (formValue.getTime() > today.getTime()) {
-        return true;
-      } else {
-        return false;
-      }
+      return true;
+    } else {
+      return false;
     }
-    return false;
   }
 
   render() {
     return (
-      <input
-        ref={this.props.dataFieldRef}
-        className="input input_text"
-        type="date"
+      <select
+        ref={this.props.dropDownRef}
+        className="dropdown"
         value={this.state.value}
         onChange={this.handleChange}
         {...this.castomAttr}
-      />
+      >
+        <option>10.00-14.00</option>
+        <option>14.00-18.00</option>
+        <option>18.00-22.00</option>
+      </select>
     );
   }
 }
 
-export default DataField;
+export default DropDown;
