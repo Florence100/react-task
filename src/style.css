@@ -3,7 +3,9 @@ body,
 header, 
 main,
 footer,
-#current-page {
+#current-page
+label,
+p {
     margin: 0;
     padding: 0;
     border: 0;

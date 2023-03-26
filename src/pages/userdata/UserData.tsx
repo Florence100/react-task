@@ -6,7 +6,7 @@ function UserData() {
   return (
     <div className="wrapper">
       <div className="form-container">
-        <h3>Пожалуйста, заполните анкету</h3>
+        <h3>Пожалуйста, заполните форму</h3>
         <Form />
       </div>
     </div>

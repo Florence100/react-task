@@ -54,20 +54,31 @@ class CheckBox extends React.Component<CheckBoxProp, CheckBoxState> {
         data-value={this.state.value}
         {...this.validAttr}
       >
-        <p>
-          <input type="checkbox" value="Звонок по телефону" onChange={this.handleChange} /> Звонок
-          по телефону
-        </p>
-        <p>
-          <input type="checkbox" value="Оповещение через е-mail" onChange={this.handleChange} />{' '}
-          Оповещение через е-mail
-        </p>
-        <p>
+        <p className="checkbox-value">
           <input
             type="checkbox"
+            className="input-checkbox"
+            value="Звонок по телефону"
+            onChange={this.handleChange}
+          />
+          Звонок по по телефону
+        </p>
+        <p className="checkbox-value">
+          <input
+            type="checkbox"
+            className="input-checkbox"
+            value="Оповещение через е-mail"
+            onChange={this.handleChange}
+          />
+          Оповещение через е-mail
+        </p>
+        <p className="checkbox-value">
+          <input
+            type="checkbox"
+            className="input-checkbox"
             value="Оповещение посредтвом Viber/Telegram"
             onChange={this.handleChange}
-          />{' '}
+          />
           Оповещение посредством Viber/Telegram
         </p>
       </div>

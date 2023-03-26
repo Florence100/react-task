@@ -1,8 +1,15 @@
 .form-questions {
-    width: 450px;
-    min-height: 450px;
-    border-radius: 5px;
-    border: 1px solid #a7355d;
-    padding: 30px 15px;
+    width: 550px;
+    border-radius: 8px;
+    border: 1px solid rgba(167, 57, 93, 0.5);
+    padding: 35px;
+    padding-top: 15px;
     box-sizing: border-box;
+    margin-bottom: 30px;
+    background: rgba(225, 137, 176, 0.1);
+}
+
+.label {
+    margin-bottom: 5px;
+    margin-top: 20px;
 }

@@ -46,12 +46,12 @@ class RadioButton extends React.Component<RadioButtonProp, RadioButtonState> {
         data-value={this.state.value}
         {...this.validAttr}
       >
-        <p>
+        <p className="checkbox-value">
           <label>
             <input type="radio" name="agree" value="Да" onChange={this.handleChange} /> Да
           </label>
         </p>
-        <p>
+        <p className="checkbox-value">
           <label>
             <input type="radio" name="agree" value="Нет" onChange={this.handleChange} /> Нет
           </label>

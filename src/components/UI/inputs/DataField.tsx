@@ -50,6 +50,7 @@ class DataField extends React.Component<DataFieldProp, NameFieldState> {
         ref={this.props.dataFieldRef}
         className="input input_text"
         type="date"
+        title="Выберите любой день после текущей даты"
         value={this.state.value}
         onChange={this.handleChange}
         {...this.castomAttr}

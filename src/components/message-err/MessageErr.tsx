@@ -7,18 +7,9 @@ type MessageProp = {
   messagePropRef: React.RefObject<HTMLDivElement>;
 };
 
-// type MessagePropState = {
-//   isActive: boolean;
-// };
-
 class MessageErr extends React.Component<MessageProp> {
   constructor(props: MessageProp) {
     super(props);
-    // if (this.props.isValid === false) {
-    //   this.state = { isActive: false };
-    // } else {
-    //   this.state = { isActive: true };
-    // }
   }
 
   render() {
