@@ -48,6 +48,7 @@ class NameField extends React.Component<INameFieldProp, NameFieldState> {
       <input
         ref={this.props.nameFieldRef}
         className="input input_text"
+        title="Значение должно состоять из двух слов, написанных со строчной буквы. Слова должны быть разделены пробелом. Количество символов каждого слова - от 2-х до 20."
         type="text"
         value={this.state.value}
         onChange={this.handleChange}
