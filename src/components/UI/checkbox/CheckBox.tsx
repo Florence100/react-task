@@ -14,6 +14,7 @@ type CheckBoxState = {
 class CheckBox extends React.Component<CheckBoxProp, CheckBoxState> {
   isValid: boolean;
   validAttr: { 'data-valid': boolean };
+  valueAttr: string;
   valueList: Array<string>;
 
   constructor(props: CheckBoxProp) {
@@ -22,6 +23,7 @@ class CheckBox extends React.Component<CheckBoxProp, CheckBoxState> {
     this.state = { value: props.value, valid: this.isValid };
     this.handleChange = this.handleChange.bind(this);
     this.validAttr = { 'data-valid': this.isValid };
+    this.valueAttr = '';
     this.valueList = [];
   }
 
@@ -36,6 +38,7 @@ class CheckBox extends React.Component<CheckBoxProp, CheckBoxState> {
     this.isValid = this.validate(val);
     this.setState({ value: val, valid: this.isValid });
     this.validAttr = { 'data-valid': this.isValid };
+    this.valueAttr = this.valueList.join(', ');
   }
 
   validate(val: string) {

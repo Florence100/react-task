@@ -116,7 +116,17 @@ class Form extends React.Component<MyProps, MyState> {
       };
       userInfoArr.push(this.userCard);
       this.props.updateData(userInfoArr);
-      alert('Ваши данные сохранены');
+      alert(
+        `Ваши данные сохранены: 
+        Имя - ${this.userCard.userName}, 
+        дата доставки - ${this.userCard.userDate},
+        оповещение о доставке - ${(this.checkBox.current as HTMLInputElement).getAttribute(
+          'data-value'
+        )},
+        время доставки - ${this.userCard.userTime}, 
+        согласие на обработку данных - Да,
+        загруженное фото - ${this.userCard.userImg}`
+      );
       this.uniqueID++;
     }
   }
