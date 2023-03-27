@@ -8,7 +8,10 @@ import FileField from '../UI/filefield/FileField';
 import MessageErr from '../message-err/MessageErr';
 import './style.css';
 
-type MyProps = object;
+interface MyProps {
+  updateData: (value: object[]) => void;
+}
+
 type MyState = {
   isValid: boolean;
   nameValid: boolean;
@@ -16,6 +19,7 @@ type MyState = {
   checkBoxValid: boolean;
   radioButtonValid: boolean;
 };
+const userInfoArr: Array<object> = [];
 
 class Form extends React.Component<MyProps, MyState> {
   nameField: React.RefObject<HTMLInputElement>;
@@ -29,6 +33,7 @@ class Form extends React.Component<MyProps, MyState> {
   dataErr: React.RefObject<HTMLDivElement>;
   checkBoxErr: React.RefObject<HTMLDivElement>;
   radioButtonErr: React.RefObject<HTMLDivElement>;
+  uniqueID: number;
 
   state = {
     isValid: false,
@@ -36,6 +41,15 @@ class Form extends React.Component<MyProps, MyState> {
     dataValid: true,
     checkBoxValid: true,
     radioButtonValid: true,
+  };
+
+  userCard = {
+    userName: '',
+    userDate: '',
+    userTime: '',
+    userAlert: '',
+    userAgree: '',
+    userImg: '',
   };
 
   constructor(props: MyProps) {
@@ -51,6 +65,7 @@ class Form extends React.Component<MyProps, MyState> {
     this.dataErr = React.createRef<HTMLDivElement>();
     this.checkBoxErr = React.createRef<HTMLDivElement>();
     this.radioButtonErr = React.createRef<HTMLDivElement>();
+    this.uniqueID = 333;
   }
 
   handleSubmit(event: { preventDefault: () => void }) {
@@ -69,13 +84,7 @@ class Form extends React.Component<MyProps, MyState> {
         this.setState({ dataValid: false });
       }
     }
-    if (this.dropDown.current) {
-      // console.log('dropDown', this.dropDown.current.getAttribute('data-valid'));
-      // console.log('dropDown', this.dropDown.current.value);
-    }
     if (this.checkBox.current) {
-      // console.log(this.checkBox.current.getAttribute('data-valid'));
-      // console.log('value', this.checkBox.current.getAttribute('data-value'));
       if (this.checkBox.current.getAttribute('data-valid') === 'true') {
         this.setState({ checkBoxValid: true });
       } else {
@@ -83,7 +92,6 @@ class Form extends React.Component<MyProps, MyState> {
       }
     }
     if (this.radioButton.current) {
-      // console.log(this.radioButton.current.getAttribute('data-valid'));
       if (this.radioButton.current.getAttribute('data-valid') === 'true') {
         this.setState({ radioButtonValid: true });
       } else {
@@ -96,15 +104,28 @@ class Form extends React.Component<MyProps, MyState> {
       (this.checkBox.current as HTMLInputElement).getAttribute('data-valid') === 'true' &&
       (this.radioButton.current as HTMLInputElement).getAttribute('data-valid') === 'true'
     ) {
+      this.userCard = {
+        userName: (this.nameField.current as HTMLInputElement).value,
+        userDate: (this.dataField.current as HTMLInputElement).value,
+        userTime: (this.dropDown.current as HTMLSelectElement).value,
+        userAlert: (this.checkBox.current as HTMLInputElement).value,
+        userAgree: (this.radioButton.current as HTMLInputElement).value,
+        userImg: (this.fileField.current as HTMLInputElement).value
+          ? (this.fileField.current as HTMLInputElement).value
+          : '',
+      };
+      userInfoArr.push(this.userCard);
+      this.props.updateData(userInfoArr);
       alert('Ваши данные сохранены');
+      this.uniqueID++;
     }
   }
 
   render() {
     return (
-      <form className="form-questions" onSubmit={this.handleSubmit}>
+      <form className="form-questions" onSubmit={this.handleSubmit} key={this.uniqueID}>
         <label>
-          <p className="label">Имя и фамилия:</p>
+          <p className="label">* Имя и фамилия:</p>
           <NameField value="" nameFieldRef={this.nameField} />
         </label>
         <MessageErr
@@ -113,7 +134,7 @@ class Form extends React.Component<MyProps, MyState> {
           messagePropRef={this.nameErr}
         />
         <label>
-          <p className="label">Дата доставки:</p>
+          <p className="label">* Дата доставки:</p>
           <DataField value="" dataFieldRef={this.dataField} />
         </label>
         <MessageErr
@@ -122,11 +143,11 @@ class Form extends React.Component<MyProps, MyState> {
           messagePropRef={this.dataErr}
         />
         <label>
-          <p className="label">Время доставки:</p>
+          <p className="label">* Время доставки:</p>
           <DropDown value="10.00-14.00" dropDownRef={this.dropDown} />
         </label>
         <label>
-          <p className="label">Способ оповещения о доставке:</p>
+          <p className="label">* Способ оповещения о доставке:</p>
           <CheckBox value="" checkBoxRef={this.checkBox} />
         </label>
         <MessageErr
@@ -135,7 +156,7 @@ class Form extends React.Component<MyProps, MyState> {
           messagePropRef={this.checkBoxErr}
         />
         <label>
-          <p className="label">Согласие на обработку персональных данных:</p>
+          <p className="label">* Согласие на обработку персональных данных:</p>
           <RadioButton value="false" radioButtonRef={this.radioButton} />
         </label>
         <MessageErr
@@ -147,6 +168,7 @@ class Form extends React.Component<MyProps, MyState> {
           <p className="label">Загрузить фото:</p>
           <FileField fileFieldRef={this.fileField} />
         </label>
+        <p>* - Поля, обязательные к заполнению</p>
         <br />
         <button className="button" type="submit">
           Отправить
@@ -156,4 +178,4 @@ class Form extends React.Component<MyProps, MyState> {
   }
 }
 
-export default Form;
+export { Form };

@@ -20,4 +20,17 @@ type IGood = {
   images: string[];
 };
 
-export { IGoodsList, IGood };
+interface INewCard {
+  userName: string;
+  userDate: string;
+  userTime: string;
+  userAlert: string;
+  userAgree: string;
+  userImg: string;
+}
+
+interface IForm {
+  cards: Array<INewCard>;
+}
+
+export { IGoodsList, IGood, IForm };
