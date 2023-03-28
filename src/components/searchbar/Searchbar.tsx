@@ -1,44 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 
-type MyProps = object;
-type MyState = { value: string };
-
-class Searchbar extends React.Component<MyProps, MyState> {
-  constructor(props: object) {
-    super(props);
-    if (!localStorage.getItem('currentValue')) {
-      this.state = { value: '' };
-    } else {
-      this.state = { value: localStorage.getItem('currentValue') as string };
-    }
-
-    this.handleChange = this.handleChange.bind(this);
+function Searchbar() {
+  const initialValue = { value: '' };
+  if (localStorage.getItem('searchValue')) {
+    initialValue.value = localStorage.getItem('searchValue') as string;
+  } else {
+    initialValue.value = '';
   }
 
-  componentWillUnmount() {
-    localStorage.setItem('currentValue', this.state.value);
-  }
+  type searchValue = {
+    value: string;
+  };
 
-  handleChange(event: { target: { value: string } }) {
-    this.setState({ value: event.target.value });
-  }
+  const [searchValue, setSearchValue] = useState(initialValue);
 
-  render() {
-    return (
-      <div className="main__search">
-        <form>
-          <input
-            type="text"
-            value={this.state.value}
-            className="input"
-            placeholder="Искать..."
-            onChange={this.handleChange}
-          />
-        </form>
-      </div>
-    );
-  }
+  useEffect(() => {
+    localStorage.setItem('searchValue', searchValue.value);
+  });
+
+  return (
+    <div className="main__search">
+      <form>
+        <input
+          type="text"
+          value={searchValue.value}
+          className="input"
+          placeholder="Искать..."
+          onChange={(event) => {
+            setSearchValue({ value: event.target.value });
+          }}
+        />
+      </form>
+    </div>
+  );
 }
 
 export default Searchbar;

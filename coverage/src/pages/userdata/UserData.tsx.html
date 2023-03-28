@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90.62% </span>
+                <span class="strong">80.43% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>29/32</span>
+                <span class='fraction'>37/46</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90.62% </span>
+                <span class="strong">80.43% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>29/32</span>
+                <span class='fraction'>37/46</span>
             </div>
         
             
@@ -95,7 +95,23 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -114,6 +130,18 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -130,28 +158,42 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import { Form } from '../../components/form/Form';
 import './style.css';
-import { IForm } from '../../interfaces/interfaces';
+import { IFormState, INewCard } from '../../types/types';
+import PopUp from '../../components/userCard/UserCard';
 &nbsp;
 class UserData extends React.Component {
-  state: IForm;
+  state: IFormState;
 &nbsp;
   constructor(props: object) {
     super(props);
     this.state = {
       cards: [],
+      openPopUp: false,
     };
   }
 &nbsp;
-  updateData = <span class="fstat-no" title="function not covered" >(value: object[]) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    this.setState({ cards: value });</span>
-<span class="cstat-no" title="statement not covered" >    console.log('cards!', this.state);</span>
+  updateData = <span class="fstat-no" title="function not covered" >(newCard: INewCard) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+<span class="cstat-no" title="statement not covered" >      cards: [...this.state.cards, newCard],</span>
+<span class="cstat-no" title="statement not covered" >      openPopUp: true,</span>
+<span class="cstat-no" title="statement not covered" >    });</span>
+<span class="cstat-no" title="statement not covered" >    setTimeout(() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      const currentCard = this.state.cards[0].userName;</span>
+<span class="cstat-no" title="statement not covered" >      console.log(currentCard);</span>
+<span class="cstat-no" title="statement not covered" >    }, 1000);</span>
 <span class="cstat-no" title="statement not covered" >  };</span>
+&nbsp;
+  // createCard() {
+&nbsp;
+  // }
+&nbsp;
   render() {
     return (
       &lt;div className="wrapper"&gt;
         &lt;div className="form-container"&gt;
           &lt;h3&gt;Пожалуйста, заполните форму&lt;/h3&gt;
           &lt;Form updateData={this.updateData} /&gt;
+          {this.state.<span class="branch-0 cbranch-no" title="branch not covered" >openPopUp ? &lt;PopUp /&gt; : n</span>ull}
         &lt;/div&gt;
       &lt;/div&gt;
     );
@@ -166,7 +208,7 @@ export default UserData;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T00:51:25.629Z
+                at 2023-03-28T20:11:09.305Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

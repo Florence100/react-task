@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import UserData from './pages/userdata/UserData';
 import goodsList from './data/goodList';
+// import NotFound from './pages/notFound/NotFound';
 
 describe('App', () => {
   it('renders without crashing', () => {
@@ -23,4 +24,8 @@ describe('App', () => {
       'Пожалуйста, заполните форму'
     );
   });
+  // it('renders without crashing', () => {
+  //   const { container } = render(<NotFound />);
+  //   expect(container.getElementsByTagName('h3')[0]).toHaveTextContent('Здесь будет страница 404');
+  // });
 });

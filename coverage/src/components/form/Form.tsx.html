@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.91% </span>
+                <span class="strong">65.93% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>128/178</span>
+                <span class='fraction'>120/182</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.91% </span>
+                <span class="strong">65.93% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>128/178</span>
+                <span class='fraction'>120/182</span>
             </div>
         
             
@@ -241,7 +241,11 @@
 <a name='L176'></a><a href='#L176'>176</a>
 <a name='L177'></a><a href='#L177'>177</a>
 <a name='L178'></a><a href='#L178'>178</a>
-<a name='L179'></a><a href='#L179'>179</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -302,14 +306,18 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -428,21 +436,11 @@ import RadioButton from '../UI/inputs/RadioButton';
 import FileField from '../UI/filefield/FileField';
 import MessageErr from '../message-err/MessageErr';
 import './style.css';
+import { FormProps, MyState } from '../../types/types';
 &nbsp;
-interface MyProps {
-  updateData: (value: object[]) =&gt; void;
-}
-&nbsp;
-type MyState = {
-  isValid: boolean;
-  nameValid: boolean;
-  dataValid: boolean;
-  checkBoxValid: boolean;
-  radioButtonValid: boolean;
-};
 const userInfoArr: Array&lt;object&gt; = [];
 &nbsp;
-class Form extends React.Component&lt;MyProps, MyState&gt; {
+class Form extends React.Component&lt;FormProps, MyState&gt; {
   nameField: React.RefObject&lt;HTMLInputElement&gt;;
   dataField: React.RefObject&lt;HTMLInputElement&gt;;
   dropDown: React.RefObject&lt;HTMLSelectElement&gt;;
@@ -454,6 +452,7 @@ class Form extends React.Component&lt;MyProps, MyState&gt; {
   dataErr: React.RefObject&lt;HTMLDivElement&gt;;
   checkBoxErr: React.RefObject&lt;HTMLDivElement&gt;;
   radioButtonErr: React.RefObject&lt;HTMLDivElement&gt;;
+  uniqueID: number;
 &nbsp;
   state = {
     isValid: false,
@@ -472,7 +471,7 @@ class Form extends React.Component&lt;MyProps, MyState&gt; {
     userImg: '',
   };
 &nbsp;
-  constructor(props: MyProps) {
+  constructor(props: FormProps) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.nameField = React.createRef&lt;HTMLInputElement&gt;();
@@ -485,6 +484,7 @@ class Form extends React.Component&lt;MyProps, MyState&gt; {
     this.dataErr = React.createRef&lt;HTMLDivElement&gt;();
     this.checkBoxErr = React.createRef&lt;HTMLDivElement&gt;();
     this.radioButtonErr = React.createRef&lt;HTMLDivElement&gt;();
+    this.uniqueID = 333;
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  handleSubmit(event: { preventDefault: () =&gt; void }) {</span>
@@ -534,14 +534,26 @@ class Form extends React.Component&lt;MyProps, MyState&gt; {
 <span class="cstat-no" title="statement not covered" >          : '',</span>
 <span class="cstat-no" title="statement not covered" >      };</span>
 <span class="cstat-no" title="statement not covered" >      userInfoArr.push(this.userCard);</span>
-<span class="cstat-no" title="statement not covered" >      this.props.updateData(userInfoArr);</span>
-<span class="cstat-no" title="statement not covered" >      alert('Ваши данные сохранены');</span>
+<span class="cstat-no" title="statement not covered" >      this.props.updateData(this.userCard);</span>
+<span class="cstat-no" title="statement not covered" >      // this.props.updateData(userInfoArr);</span>
+<span class="cstat-no" title="statement not covered" >      alert(</span>
+<span class="cstat-no" title="statement not covered" >        `Ваши данные сохранены: </span>
+<span class="cstat-no" title="statement not covered" >        Имя - ${this.userCard.userName}, </span>
+<span class="cstat-no" title="statement not covered" >        дата доставки - ${this.userCard.userDate},</span>
+<span class="cstat-no" title="statement not covered" >        оповещение о доставке - ${(this.checkBox.current as HTMLInputElement).getAttribute(</span>
+<span class="cstat-no" title="statement not covered" >          'data-value'</span>
+<span class="cstat-no" title="statement not covered" >        )},</span>
+<span class="cstat-no" title="statement not covered" >        время доставки - ${this.userCard.userTime}, </span>
+<span class="cstat-no" title="statement not covered" >        согласие на обработку данных - Да,</span>
+<span class="cstat-no" title="statement not covered" >        загруженное фото - ${this.userCard.userImg}`</span>
+<span class="cstat-no" title="statement not covered" >      );</span>
+<span class="cstat-no" title="statement not covered" >      this.uniqueID++;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
   render() {
     return (
-      &lt;form className="form-questions" onSubmit={this.handleSubmit}&gt;
+      &lt;form className="form-questions" onSubmit={this.handleSubmit} key={this.uniqueID}&gt;
         &lt;label&gt;
           &lt;p className="label"&gt;* Имя и фамилия:&lt;/p&gt;
           &lt;NameField value="" nameFieldRef={this.nameField} /&gt;
@@ -604,7 +616,7 @@ export { Form };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-27T00:51:25.629Z
+                at 2023-03-28T20:11:09.305Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
