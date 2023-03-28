@@ -1,4 +1,4 @@
-import { IGoodsList } from '../interfaces/interfaces';
+import { IGoodsList } from '../types/types';
 
 const goodsList: IGoodsList = [
   {

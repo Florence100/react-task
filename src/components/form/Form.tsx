@@ -7,21 +7,11 @@ import RadioButton from '../UI/inputs/RadioButton';
 import FileField from '../UI/filefield/FileField';
 import MessageErr from '../message-err/MessageErr';
 import './style.css';
+import { FormProps, MyState } from '../../types/types';
 
-interface MyProps {
-  updateData: (value: object[]) => void;
-}
-
-type MyState = {
-  isValid: boolean;
-  nameValid: boolean;
-  dataValid: boolean;
-  checkBoxValid: boolean;
-  radioButtonValid: boolean;
-};
 const userInfoArr: Array<object> = [];
 
-class Form extends React.Component<MyProps, MyState> {
+class Form extends React.Component<FormProps, MyState> {
   nameField: React.RefObject<HTMLInputElement>;
   dataField: React.RefObject<HTMLInputElement>;
   dropDown: React.RefObject<HTMLSelectElement>;
@@ -52,7 +42,7 @@ class Form extends React.Component<MyProps, MyState> {
     userImg: '',
   };
 
-  constructor(props: MyProps) {
+  constructor(props: FormProps) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.nameField = React.createRef<HTMLInputElement>();
@@ -115,7 +105,8 @@ class Form extends React.Component<MyProps, MyState> {
           : '',
       };
       userInfoArr.push(this.userCard);
-      this.props.updateData(userInfoArr);
+      this.props.updateData(this.userCard);
+      // this.props.updateData(userInfoArr);
       alert(
         `Ваши данные сохранены: 
         Имя - ${this.userCard.userName}, 

@@ -26,11 +26,24 @@ interface INewCard {
   userTime: string;
   userAlert: string;
   userAgree: string;
-  userImg: string;
+  userImg?: string;
 }
 
-interface IForm {
+interface IFormState {
   cards: Array<INewCard>;
+  openPopUp: boolean;
 }
 
-export { IGoodsList, IGood, IForm };
+interface FormProps {
+  updateData: (value: INewCard) => void;
+}
+
+type MyState = {
+  isValid: boolean;
+  nameValid: boolean;
+  dataValid: boolean;
+  checkBoxValid: boolean;
+  radioButtonValid: boolean;
+};
+
+export { IGoodsList, IGood, IFormState, FormProps, MyState, INewCard };
