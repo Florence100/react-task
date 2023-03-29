@@ -3,7 +3,7 @@ import './style.css';
 import { IGood } from '../../types/types';
 import Button from '../UI/buttons/Button';
 
-function OneCard(props: IGood) {
+function OneCardGood(props: IGood) {
   return (
     <div className="card">
       <img className="card__img" src={props.images[0]} alt="img" />
@@ -16,4 +16,4 @@ function OneCard(props: IGood) {
   );
 }
 
-export default OneCard;
+export default OneCardGood;

@@ -20,6 +20,16 @@ type IGood = {
   images: string[];
 };
 
+export type INameFieldProp = {
+  value: string;
+  nameFieldRef: React.RefObject<HTMLInputElement>;
+};
+
+export type DataFieldProp = {
+  value: string;
+  dataFieldRef: React.RefObject<HTMLInputElement>;
+};
+
 interface INewCard {
   userName: string;
   userDate: string;
@@ -31,7 +41,7 @@ interface INewCard {
 
 interface IFormState {
   cards: Array<INewCard>;
-  openPopUp: boolean;
+  // openPopUp: boolean;
 }
 
 interface FormProps {

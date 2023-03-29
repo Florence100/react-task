@@ -1,9 +1,9 @@
 import React from 'react';
 import goodsList from '../../data/goodList';
-import OneCard from '../onecard/OneCard';
+import OneCard from '../oneCardGood/OneCardGood';
 import './style.css';
 
-function Cards() {
+function CardsGood() {
   const listItems = goodsList.map((good) => (
     <OneCard
       key={good.id}
@@ -20,4 +20,4 @@ function Cards() {
   return <div className="cards">{listItems}</div>;
 }
 
-export default Cards;
+export default CardsGood;

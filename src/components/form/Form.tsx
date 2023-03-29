@@ -3,7 +3,7 @@ import NameField from '../UI/inputs/NameField';
 import DataField from '../UI/inputs/DataField';
 import DropDown from '../UI/dropdown/DropDown';
 import CheckBox from '../UI/checkbox/CheckBox';
-import RadioButton from '../UI/inputs/RadioButton';
+import RadioButton from '../UI/radioButton/RadioButton';
 import FileField from '../UI/filefield/FileField';
 import MessageErr from '../message-err/MessageErr';
 import './style.css';
@@ -106,18 +106,18 @@ class Form extends React.Component<FormProps, MyState> {
       };
       userInfoArr.push(this.userCard);
       this.props.updateData(this.userCard);
-      // this.props.updateData(userInfoArr);
-      alert(
-        `Ваши данные сохранены: 
-        Имя - ${this.userCard.userName}, 
-        дата доставки - ${this.userCard.userDate},
-        оповещение о доставке - ${(this.checkBox.current as HTMLInputElement).getAttribute(
-          'data-value'
-        )},
-        время доставки - ${this.userCard.userTime}, 
-        согласие на обработку данных - Да,
-        загруженное фото - ${this.userCard.userImg}`
-      );
+
+      // alert(
+      //   `Ваши данные сохранены:
+      //   Имя - ${this.userCard.userName},
+      //   дата доставки - ${this.userCard.userDate},
+      //   оповещение о доставке - ${(this.checkBox.current as HTMLInputElement).getAttribute(
+      //     'data-value'
+      //   )},
+      //   время доставки - ${this.userCard.userTime},
+      //   согласие на обработку данных - Да,
+      //   загруженное фото - ${this.userCard.userImg}`
+      // );
       this.uniqueID++;
     }
   }

@@ -11,14 +11,14 @@ class UserData extends React.Component {
     super(props);
     this.state = {
       cards: [],
-      openPopUp: false,
+      // openPopUp: false,
     };
   }
 
   updateData = (newCard: INewCard) => {
     this.setState({
       cards: [...this.state.cards, newCard],
-      openPopUp: true,
+      // openPopUp: true,
     });
     setTimeout(() => {
       const currentCard = this.state.cards[0].userName;
@@ -36,7 +36,7 @@ class UserData extends React.Component {
         <div className="form-container">
           <h3>Пожалуйста, заполните форму</h3>
           <Form updateData={this.updateData} />
-          {this.state.openPopUp ? <PopUp /> : null}
+          {/* {this.state.openPopUp ? <PopUp /> : null} */}
         </div>
       </div>
     );

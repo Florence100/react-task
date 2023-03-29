@@ -1,6 +1,6 @@
 import React from 'react';
 import Searchbar from '../../components/searchbar/Searchbar';
-import Cards from '../../components/cards/Cards';
+import Cards from '../../components/cardsGood/CardsGood';
 
 function Home() {
   return (
