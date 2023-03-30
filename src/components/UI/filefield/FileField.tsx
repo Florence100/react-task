@@ -1,37 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
+import { FileFieldProp } from '../../../types/types';
 
-type FileFieldProp = {
-  fileFieldRef: React.RefObject<HTMLInputElement>;
-};
-
-type FileFieldState = {
-  valid: boolean;
-};
-
-class FileField extends React.Component<FileFieldProp, FileFieldState> {
-  constructor(props: FileFieldProp) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
+function validate(value: string) {
+  const pattern = '((.jpg|.jpeg|.png)$)';
+  if (value) {
+    console.log(value);
+    if (value.match(pattern) === null) {
+      return false;
+    }
+    return true;
   }
+  return false;
+}
 
-  handleChange(e: { target: HTMLInputElement }) {
-    const val = e.target.value;
-    console.log('img:', val);
-  }
+function FileField(props: FileFieldProp) {
+  const [valid, setValid] = useState(false);
+  const [value, setValue] = useState('');
 
-  render() {
-    return (
-      <input
-        type="file"
-        ref={this.props.fileFieldRef}
-        className="filefield"
-        name="profile_pic"
-        accept=".jpg, .jpeg, .png"
-        onChange={this.handleChange}
-      ></input>
-    );
-  }
+  return (
+    <input
+      type="file"
+      ref={props.fileFieldRef}
+      className="filefield"
+      name="profile_pic"
+      accept=".jpg, .jpeg, .png"
+      data-value={value}
+      data-valid={valid}
+      onChange={(event) => {
+        const currentValue = event.target.value;
+        setValue(currentValue);
+        setValid(validate(currentValue));
+      }}
+    ></input>
+  );
 }
 
 export default FileField;

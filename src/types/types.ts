@@ -40,6 +40,15 @@ export type CheckBoxProp = {
   checkBoxRef: React.RefObject<HTMLInputElement>;
 };
 
+export type RadioButtonProp = {
+  value: string;
+  radioButtonRef: React.RefObject<HTMLInputElement>;
+};
+
+export type FileFieldProp = {
+  fileFieldRef: React.RefObject<HTMLInputElement>;
+};
+
 interface INewCard {
   userName: string;
   userDate: string;
