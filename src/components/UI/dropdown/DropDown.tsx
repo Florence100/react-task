@@ -1,57 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
+import { DropDownProp } from '../../../types/types';
 
-type DropDownProp = {
-  value: string;
-  dropDownRef: React.RefObject<HTMLSelectElement>;
-};
-
-type DropDownState = {
-  value: string;
-  valid: boolean;
-};
-
-class DropDown extends React.Component<DropDownProp, DropDownState> {
-  isValid: boolean;
-  castomAttr: { 'data-valid': boolean };
-  constructor(props: DropDownProp) {
-    super(props);
-    this.isValid = this.validate(props.value);
-    this.state = { value: props.value, valid: this.isValid };
-    this.handleChange = this.handleChange.bind(this);
-    this.castomAttr = { 'data-valid': this.isValid };
+function validate(currentValue: string) {
+  if (currentValue) {
+    return true;
+  } else {
+    return false;
   }
+}
 
-  handleChange(e: { target: { value: string } }) {
-    const val = e.target.value;
-    this.isValid = this.validate(val);
-    this.setState({ value: val, valid: this.isValid });
-    this.castomAttr = { 'data-valid': this.isValid };
-  }
+function DropDown(props: DropDownProp) {
+  const [value, setValue] = useState(props.value);
+  const [valid, setValid] = useState(false);
 
-  validate(val: string) {
-    if (val) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  render() {
-    return (
-      <select
-        ref={this.props.dropDownRef}
-        className="dropdown"
-        value={this.state.value}
-        onChange={this.handleChange}
-        {...this.castomAttr}
-      >
-        <option>10.00-14.00</option>
-        <option>14.00-18.00</option>
-        <option>18.00-22.00</option>
-      </select>
-    );
-  }
+  return (
+    <select
+      ref={props.dropDownRef}
+      className="dropdown"
+      value={value}
+      data-valid={valid}
+      onChange={(event) => {
+        const currentValue = event.target.value;
+        setValue(currentValue);
+        setValid(validate(currentValue));
+      }}
+    >
+      <option>10.00-14.00</option>
+      <option>14.00-18.00</option>
+      <option>18.00-22.00</option>
+    </select>
+  );
 }
 
 export default DropDown;

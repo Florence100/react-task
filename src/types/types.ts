@@ -30,6 +30,16 @@ export type DataFieldProp = {
   dataFieldRef: React.RefObject<HTMLInputElement>;
 };
 
+export type DropDownProp = {
+  value: string;
+  dropDownRef: React.RefObject<HTMLSelectElement>;
+};
+
+export type CheckBoxProp = {
+  value: string;
+  checkBoxRef: React.RefObject<HTMLInputElement>;
+};
+
 interface INewCard {
   userName: string;
   userDate: string;
