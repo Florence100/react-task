@@ -49,6 +49,12 @@ export type FileFieldProp = {
   fileFieldRef: React.RefObject<HTMLInputElement>;
 };
 
+export type MessageProp = {
+  value: string;
+  isValid: boolean;
+  messagePropRef: React.RefObject<HTMLDivElement>;
+};
+
 interface INewCard {
   userName: string;
   userDate: string;
@@ -67,12 +73,4 @@ interface FormProps {
   updateData: (value: INewCard) => void;
 }
 
-type MyState = {
-  isValid: boolean;
-  nameValid: boolean;
-  dataValid: boolean;
-  checkBoxValid: boolean;
-  radioButtonValid: boolean;
-};
-
-export { IGoodsList, IGood, IFormState, FormProps, MyState, INewCard };
+export { IGoodsList, IGood, IFormState, FormProps, INewCard };
