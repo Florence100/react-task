@@ -25,12 +25,12 @@ function CheckBox(props: CheckBoxProp) {
       list.push(event.target.value);
     }
     setValueList(list);
-    setValue(valueList.join(', '));
+    setValue(list.join(', '));
     setValid(validate(valueList.join(', ')));
   }
 
   return (
-    <div ref={props.checkBoxRef} className="checkbox" data-value={value} data-valid={valid}>
+    <div ref={props.checkBoxRef} className="checkbox" data-value={value} data-valid={valid} >
       <p className="checkbox-value">
         <label>
           <input

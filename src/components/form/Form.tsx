@@ -18,7 +18,7 @@ function Form(props: FormProps) {
   const nameField = React.createRef<HTMLInputElement>();
   const dataField = React.createRef<HTMLInputElement>();
   const dropDown = React.createRef<HTMLSelectElement>();
-  const checkBox = React.createRef<HTMLInputElement>();
+  const checkBox = React.createRef<HTMLDivElement>();
   const radioButton = React.createRef<HTMLInputElement>();
   const radioButtonErr = React.createRef<HTMLDivElement>();
   const fileField = React.createRef<HTMLInputElement>();
@@ -58,7 +58,14 @@ function Form(props: FormProps) {
       setUniqueID(() => {
         return uniqueID + 1;
       });
-      console.log('form is valid!');
+      const newCard = {
+        userName: nameField.current?.value, 
+        userDate: dataField.current?.value, 
+        userTime: dropDown.current?.value,
+        userImg: fileField.current?.value,
+        userAlert: checkBox.current?.getAttribute('data-value'),
+      }
+      props.updateData(newCard);
     }
   }
 

@@ -37,7 +37,7 @@ export type DropDownProp = {
 
 export type CheckBoxProp = {
   value: string;
-  checkBoxRef: React.RefObject<HTMLInputElement>;
+  checkBoxRef: React.RefObject<HTMLDivElement>;
 };
 
 export type RadioButtonProp = {
@@ -55,13 +55,12 @@ export type MessageProp = {
   messagePropRef: React.RefObject<HTMLDivElement>;
 };
 
-interface INewCard {
-  userName: string;
-  userDate: string;
-  userTime: string;
-  userAlert: string;
-  userAgree: string;
-  userImg?: string;
+export interface INewCard {
+  userName: string | undefined;
+  userDate: string | undefined;
+  userTime: string | undefined;
+  userImg: string | undefined;
+  userAlert: string | null | undefined;
 }
 
 interface IFormState {
@@ -73,4 +72,4 @@ interface FormProps {
   updateData: (value: INewCard) => void;
 }
 
-export { IGoodsList, IGood, IFormState, FormProps, INewCard };
+export { IGoodsList, IGood, IFormState, FormProps };
