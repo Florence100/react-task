@@ -9,8 +9,6 @@ import MessageErr from '../message-err/MessageErr';
 import { FormProps } from '../../types/types';
 import './style.css';
 
-// const userInfoArr: Array<object> = [];
-
 function Form(props: FormProps) {
   const nameErr = React.createRef<HTMLDivElement>();
   const dataErr = React.createRef<HTMLDivElement>();
@@ -29,15 +27,6 @@ function Form(props: FormProps) {
   const [dataValid, setDataValid] = useState(true);
   const [checkBoxValid, setCheckBoxValid] = useState(true);
   const [radioButtonValid, setRadioButtonValid] = useState(true);
-
-  // userCard = {
-  //   userName: '',
-  //   userDate: '',
-  //   userTime: '',
-  //   userAlert: '',
-  //   userAgree: '',
-  //   userImg: '',
-  // };
 
   function validateField(value: string) {
     if (value === 'true') {
@@ -59,13 +48,16 @@ function Form(props: FormProps) {
         return uniqueID + 1;
       });
       const newCard = {
-        userName: nameField.current?.value, 
-        userDate: dataField.current?.value, 
+        userName: nameField.current?.value,
+        userDate: dataField.current?.value,
         userTime: dropDown.current?.value,
-        userImg: fileField.current?.value,
+        userImg: fileField.current?.files?.[0]
+          ? URL.createObjectURL(fileField.current?.files?.[0] as Blob)
+          : '',
         userAlert: checkBox.current?.getAttribute('data-value'),
-      }
+      };
       props.updateData(newCard);
+      alert('Данные сохранены');
     }
   }
 

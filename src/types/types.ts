@@ -55,21 +55,25 @@ export type MessageProp = {
   messagePropRef: React.RefObject<HTMLDivElement>;
 };
 
+export type UserCardsProp = {
+  formArr: Array<INewCard>;
+};
+
+export type UserCardProp = {
+  form: INewCard;
+  key: number;
+};
+
 export interface INewCard {
   userName: string | undefined;
   userDate: string | undefined;
   userTime: string | undefined;
-  userImg: string | undefined;
+  userImg: string;
   userAlert: string | null | undefined;
-}
-
-interface IFormState {
-  cards: Array<INewCard>;
-  // openPopUp: boolean;
 }
 
 interface FormProps {
   updateData: (value: INewCard) => void;
 }
 
-export { IGoodsList, IGood, IFormState, FormProps };
+export { IGoodsList, IGood, FormProps };

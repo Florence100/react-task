@@ -5,7 +5,6 @@ import { FileFieldProp } from '../../../types/types';
 function validate(value: string) {
   const pattern = '((.jpg|.jpeg|.png)$)';
   if (value) {
-    console.log(value);
     if (value.match(pattern) === null) {
       return false;
     }
@@ -28,9 +27,11 @@ function FileField(props: FileFieldProp) {
       data-value={value}
       data-valid={valid}
       onChange={(event) => {
-        const currentValue = event.target.value;
-        setValue(currentValue);
-        setValid(validate(currentValue));
+        if (event.target.files) {
+          const currentValue = URL.createObjectURL(event.target.files[0]);
+          setValue(currentValue);
+          setValid(validate(currentValue));
+        }
       }}
     ></input>
   );
