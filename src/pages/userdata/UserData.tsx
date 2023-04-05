@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form } from '../../components/form/Form';
+import Form from '../../components/form/Form';
 import './style.css';
 import { INewCard } from '../../types/types';
 import UserCard from '../../components/userCards/UserCards';

@@ -1,35 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
-import { DropDownProp } from '../../../types/types';
+import { IDropdownProps } from '../../../types/types';
+import MessageErr from '../../message-err/MessageErr';
 
-function validate(currentValue: string) {
-  if (currentValue) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function DropDown(props: DropDownProp) {
-  const [value, setValue] = useState(props.value);
-  const [valid, setValid] = useState(false);
-
+function DropDown({ register, isError }: IDropdownProps) {
   return (
-    <select
-      ref={props.dropDownRef}
-      className="dropdown"
-      value={value}
-      data-valid={valid}
-      onChange={(event) => {
-        const currentValue = event.target.value;
-        setValue(currentValue);
-        setValid(validate(currentValue));
-      }}
-    >
-      <option>10.00-14.00</option>
-      <option>14.00-18.00</option>
-      <option>18.00-22.00</option>
-    </select>
+    <>
+      <select {...register('select', { required: true })} className="dropdown">
+        <option>Беларусь</option>
+        <option>Россия</option>
+        <option>Украина</option>
+        <option>Польша</option>
+      </select>
+      {isError === true ? (
+        <MessageErr errorText="Пожалуйста, убедитесь, что поле заполнено" />
+      ) : (
+        <MessageErr />
+      )}
+    </>
   );
 }
 

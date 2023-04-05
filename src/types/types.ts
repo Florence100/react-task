@@ -1,3 +1,5 @@
+import { UseFormRegister } from 'react-hook-form';
+
 type IGoodsList = {
   id: number;
   title: string;
@@ -20,39 +22,8 @@ type IGood = {
   images: string[];
 };
 
-export type INameFieldProp = {
-  value: string;
-  nameFieldRef: React.RefObject<HTMLInputElement>;
-};
-
-export type DataFieldProp = {
-  value: string;
-  dataFieldRef: React.RefObject<HTMLInputElement>;
-};
-
-export type DropDownProp = {
-  value: string;
-  dropDownRef: React.RefObject<HTMLSelectElement>;
-};
-
-export type CheckBoxProp = {
-  value: string;
-  checkBoxRef: React.RefObject<HTMLDivElement>;
-};
-
-export type RadioButtonProp = {
-  value: string;
-  radioButtonRef: React.RefObject<HTMLInputElement>;
-};
-
-export type FileFieldProp = {
-  fileFieldRef: React.RefObject<HTMLInputElement>;
-};
-
 export type MessageProp = {
-  value: string;
-  isValid: boolean;
-  messagePropRef: React.RefObject<HTMLDivElement>;
+  errorText?: string;
 };
 
 export type UserCardsProp = {
@@ -67,9 +38,55 @@ export type UserCardProp = {
 export interface INewCard {
   userName: string | undefined;
   userDate: string | undefined;
-  userTime: string | undefined;
+  userCountry: string | undefined;
+  userCheckbox: boolean;
+  userSex: string;
   userImg: string;
-  userAlert: string | null | undefined;
+}
+
+export interface IFormValues {
+  textInput: string;
+  dateInput: string;
+  select: string;
+  checkbox: boolean;
+  radioInput: string;
+  fileInput: FileList;
+}
+
+export interface IInputProps {
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+  isError?: null | true;
+}
+
+export interface IDataFieldProps {
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+  isError?: null | true;
+}
+
+export interface IDropdownProps {
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+  isError?: null | true;
+}
+
+export interface ICheckBoxProps {
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+  isError?: null | true;
+}
+
+export interface IRadioProps {
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+  isError?: null | true;
+}
+
+export interface IFileFieldProps {
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+  isError?: null | true;
 }
 
 interface FormProps {

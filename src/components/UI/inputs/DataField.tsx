@@ -1,40 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
-import { DataFieldProp } from '../../../types/types';
+import { IDataFieldProps } from '../../../types/types';
+import MessageErr from '../../message-err/MessageErr';
 
-function validate(value: string) {
-  if (value) {
-    const today = new Date();
-    const enteredValue = new Date(value);
-    if (enteredValue.getTime() === today.getTime()) {
-      return true;
-    } else if (enteredValue.getTime() > today.getTime()) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  return false;
-}
-
-function DataField(props: DataFieldProp) {
-  const [value, setValue] = useState(props.value);
-  const [valid, setValid] = useState(false);
-
+function DataField({ register, isError }: IDataFieldProps) {
   return (
-    <input
-      ref={props.dataFieldRef}
-      className="input input_text"
-      type="date"
-      title="Выберите любой день после текущей даты"
-      value={value}
-      data-valid={valid}
-      onChange={(event) => {
-        const currentValue = event.target.value;
-        setValue(currentValue);
-        setValid(validate(currentValue));
-      }}
-    />
+    <>
+      <input
+        {...register('dateInput', { required: true })}
+        className="input input_text"
+        type="date"
+      />
+      {isError === true ? (
+        <MessageErr errorText="Пожалуйста, убедитесь, что поле заполнено" />
+      ) : (
+        <MessageErr />
+      )}
+    </>
   );
 }
 
