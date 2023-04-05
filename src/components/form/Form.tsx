@@ -28,6 +28,7 @@ function Form(props: FormProps) {
       userImg: URL.createObjectURL(data.fileInput[0]),
     };
     props.updateData(newCard);
+    alert('Данные успешно сохранены');
     reset();
   };
 
