@@ -6,28 +6,22 @@ import MessageErr from '../../message-err/MessageErr';
 function RadioButton({ register, isError }: IRadioProps) {
   return (
     <div className="radiobutton">
-      <p className="checkbox-value">
-        <label>
-          <input
-            type="radio"
-            {...register('radioInput', { required: true })}
-            name="sex"
-            value="Мужской"
-          />{' '}
-          Мужской
-        </label>
-      </p>
-      <p className="checkbox-value">
-        <label>
-          <input
-            type="radio"
-            {...register('radioInput', { required: true })}
-            name="sex"
-            value="Женский"
-          />{' '}
-          Женский
-        </label>
-      </p>
+      <label>
+        <input
+          type="radio"
+          {...register('radioInput', { required: true })}
+          value="Мужской"
+        />{' '}
+        Мужской
+      </label>
+      <label>
+        <input
+          type="radio"
+          {...register('radioInput', { required: true })}
+          value="Женский"
+        />{' '}
+        Женский
+      </label>
       {isError === true ? (
         <MessageErr errorText="Пожалуйста, убедитесь, что поле заполнено" />
       ) : (

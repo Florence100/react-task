@@ -9,6 +9,9 @@ function OneUserCards(props: UserCardProp) {
         <b>Имя:</b> {props.form.userName}
       </div>
       <div>
+        <b>Пол:</b> {props.form.userSex}
+      </div>
+      <div>
         <b>Дата рождения:</b> {props.form.userDate}
       </div>
       <div>
