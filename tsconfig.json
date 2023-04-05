@@ -1,29 +1,3 @@
-// {
-//   "compilerOptions": {
-//     "target": "ESNext",
-//     "useDefineForClassFields": true,
-//     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-//     "allowJs": false,
-//     "skipLibCheck": true,
-//     "esModuleInterop": false,
-//     "allowSyntheticDefaultImports": true,
-//     "strict": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "module": "ESNext",
-//     "moduleResolution": "Node",
-//     "resolveJsonModule": true,
-//     "isolatedModules": true,
-//     "noEmit": true,
-//     "jsx": "react-jsx"
-//   },
-//   "include": [
-//     "vite.config.ts",
-//     ".eslintrc.cjs",
-//     "src"
-//   ],
-//   "references": [{ "path": "./tsconfig.node.json" }]
-// }
-
 {
   "compilerOptions": {
     "target": "esnext",
@@ -31,7 +5,7 @@
     "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
-    // "noImplicitAny": true,
+    "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
