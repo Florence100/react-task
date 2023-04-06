@@ -16,14 +16,6 @@ function Searchbar() {
     valueRef.current = searchValue.value;
     localStorage.setItem('searchValue', valueRef.current);
   }, [searchValue]);
-
-  useEffect(() => {
-    return function clean() {
-      console.log(valueRef.current);
-
-    };
-  }, []);
-
   return (
     <div className="main__search">
       <form>

@@ -23,8 +23,9 @@ module.exports = {
         'prettier',
     ],
     rules: {
-        "prettier/prettier": "error",
+        "prettier/prettier": "warn",
         'react/react-in-jsx-scope': 0,
         "react/destructuring-assignment": 0,
+        "no-console": "warn",
     },
 };
