@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
 
 function Searchbar() {
@@ -9,15 +9,20 @@ function Searchbar() {
     initialValue.value = '';
   }
 
-  type searchValue = {
-    value: string;
-  };
-
   const [searchValue, setSearchValue] = useState(initialValue);
+  const valueRef: React.MutableRefObject<string | undefined> = useRef();
 
   useEffect(() => {
-    localStorage.setItem('searchValue', searchValue.value);
-  });
+    valueRef.current = searchValue.value;
+    localStorage.setItem('searchValue', valueRef.current);
+  }, [searchValue]);
+
+  useEffect(() => {
+    return function clean() {
+      console.log(valueRef.current);
+
+    };
+  }, []);
 
   return (
     <div className="main__search">
