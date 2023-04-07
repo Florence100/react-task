@@ -5,22 +5,14 @@ import MessageErr from '../../message-err/MessageErr';
 
 function RadioButton({ register, isError }: IRadioProps) {
   return (
-    <div >
+    <div>
       <div className="radiobutton">
         <label>
-          <input
-            type="radio"
-            {...register('radioInput', { required: true })}
-            value="Мужской"
-          />{' '}
+          <input type="radio" {...register('radioInput', { required: true })} value="Мужской" />{' '}
           Мужской
         </label>
         <label>
-          <input
-            type="radio"
-            {...register('radioInput', { required: true })}
-            value="Женский"
-          />{' '}
+          <input type="radio" {...register('radioInput', { required: true })} value="Женский" />{' '}
           Женский
         </label>
       </div>

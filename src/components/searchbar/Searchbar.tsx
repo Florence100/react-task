@@ -1,11 +1,12 @@
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 import axiosInstance from '../../services/api';
 import React, { useState, useEffect, useRef } from 'react';
+import { Photo, GET_Articles, CardsGoodProps } from '../../types/types';
 import './style.css';
 
 const API_KEY = '6285715144242bd4e87c78f80ab3cd45';
 
-function Searchbar() {
+function Searchbar(props: CardsGoodProps) {
   const initialValue = { value: '' };
   if (localStorage.getItem('searchValue')) {
     initialValue.value = localStorage.getItem('searchValue') as string;
@@ -15,6 +16,7 @@ function Searchbar() {
 
   const [searchValue, setSearchValue] = useState(initialValue);
   const [isLoading, setIsLoading] = useState(false);
+  const [photo, setPhoto] = useState<Photo[]>([]);
   const valueRef: React.MutableRefObject<string | undefined> = useRef();
 
   useEffect(() => {
@@ -22,16 +24,32 @@ function Searchbar() {
     localStorage.setItem('searchValue', valueRef.current);
   }, [searchValue]);
 
+  // async function getInitialArr() {
+  //   try {
+  //     const response: AxiosResponse<GET_Articles> = await axiosInstance.get(
+  //       `?method=flickr.photos.search&api_key=${API_KEY}&text=${
+  //         searchValue.value ? searchValue.value : 'nature'
+  //       }&per_page=12&page=1&format=json&nojsoncallback=1`
+  //     );
+  //     return response.data.photos.photo;
+  //   } catch (err) {}
+  // }
+
+  // const initialArr = getInitialArr();
+
   async function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axiosInstance.get(
-        `?method=flickr.photos.search&api_key=${API_KEY}&text=${searchValue.value}&per_page=20&page=1`
+      const response: AxiosResponse<GET_Articles> = await axiosInstance.get(
+        `?method=flickr.photos.search&api_key=${API_KEY}&text=${
+          searchValue.value ? searchValue.value : 'nature'
+        }&per_page=12&page=1&format=json&nojsoncallback=1`
       );
-      console.log(response.request);
+      setPhoto(response.data.photos.photo);
+      props.updateFotoData(response.data.photos.photo);
     } catch (err) {
-      console.log('error');
+      // console.log('error');
     } finally {
       setIsLoading(false);
     }

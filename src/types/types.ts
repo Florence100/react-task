@@ -93,4 +93,36 @@ interface FormProps {
   updateData: (value: INewCard) => void;
 }
 
+export interface CardsGoodProps {
+  updateFotoData: (value: Array<Photo>) => void;
+}
+
+export interface Photo {
+  id: string;
+  owner: string;
+  secret: string;
+  server: string;
+  title: string;
+  ispublic: string;
+  isfriend: string;
+  isfamily: string;
+}
+
+export interface Request {
+  photo: Array<Photo>;
+  // data: {
+  //   photos: Photos;
+  //   stat: string;
+  // };
+  // status: string;
+  // statusText: string;
+  // headers: object;
+  // config: object;
+  // request: XMLHttpRequest;
+}
+
+export interface GET_Articles {
+  photos: Request;
+}
+
 export { IGoodsList, IGood, FormProps };
