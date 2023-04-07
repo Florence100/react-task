@@ -11,16 +11,16 @@ type IGoodsList = {
   images: string[];
 }[];
 
-type IGood = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  rating: number;
-  brand: string;
-  category: string;
-  images: string[];
-};
+// type IGood = {
+//   id: number;
+//   title: string;
+//   description: string;
+//   price: number;
+//   rating: number;
+//   brand: string;
+//   category: string;
+//   images: string[];
+// };
 
 export type MessageProp = {
   errorText?: string;
@@ -125,4 +125,4 @@ export interface GET_Articles {
   photos: Request;
 }
 
-export { IGoodsList, IGood, FormProps };
+export { IGoodsList, FormProps };

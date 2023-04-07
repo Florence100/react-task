@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Searchbar from '../../components/searchbar/Searchbar';
-import Cards from '../../components/cardsGood/CardsGood';
+import Cards from '../../components/fotoCards/FotoCards';
 import { Photo } from '../../types/types';
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
 
   function updateFotoData(newFotoArr: Array<Photo>) {
     setFotoData(newFotoArr);
+    // console.log('fotoData', fotoData);
   }
 
   return (

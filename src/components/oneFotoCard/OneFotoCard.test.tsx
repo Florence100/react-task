@@ -1,7 +1,7 @@
 import { describe, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import OneCardGood from './OneCardGood';
+import OneFotoCard from './OneFotoCard';
 
 describe('Correct card fields', () => {
   it('Renders the correct card fields', () => {
@@ -22,7 +22,7 @@ describe('Correct card fields', () => {
     };
 
     const { container } = render(
-      <OneCardGood
+      <OneFotoCard
         key={testCard.key}
         id={testCard.id}
         title={testCard.title}

@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import axiosInstance from '../../services/api';
 import React, { useState, useEffect, useRef } from 'react';
 import { Photo, GET_Articles, CardsGoodProps } from '../../types/types';
@@ -24,14 +24,20 @@ function Searchbar(props: CardsGoodProps) {
     localStorage.setItem('searchValue', valueRef.current);
   }, [searchValue]);
 
-  // async function getInitialArr() {
+  // useEffect(() => {
+  //   onLoading();
+  //   console.log('ref!!!');
+  // });
+
+  // async function onLoading() {
   //   try {
   //     const response: AxiosResponse<GET_Articles> = await axiosInstance.get(
   //       `?method=flickr.photos.search&api_key=${API_KEY}&text=${
   //         searchValue.value ? searchValue.value : 'nature'
   //       }&per_page=12&page=1&format=json&nojsoncallback=1`
   //     );
-  //     return response.data.photos.photo;
+  //     setPhoto(response.data.photos.photo);
+  //     // props.updateFotoData(response.data.photos.photo);
   //   } catch (err) {}
   // }
 
