@@ -1,27 +1,5 @@
 import { UseFormRegister } from 'react-hook-form';
 
-type IGoodsList = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  rating: number;
-  brand: string;
-  category: string;
-  images: string[];
-}[];
-
-// type IGood = {
-//   id: number;
-//   title: string;
-//   description: string;
-//   price: number;
-//   rating: number;
-//   brand: string;
-//   category: string;
-//   images: string[];
-// };
-
 export type MessageProp = {
   errorText?: string;
 };
@@ -125,4 +103,4 @@ export interface GET_Articles {
   photos: Request;
 }
 
-export { IGoodsList, FormProps };
+export { FormProps };
