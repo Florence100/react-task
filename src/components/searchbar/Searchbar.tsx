@@ -24,25 +24,6 @@ function Searchbar(props: CardsGoodProps) {
     localStorage.setItem('searchValue', valueRef.current);
   }, [searchValue]);
 
-  // useEffect(() => {
-  //   onLoading();
-  //   console.log('ref!!!');
-  // });
-
-  // async function onLoading() {
-  //   try {
-  //     const response: AxiosResponse<GET_Articles> = await axiosInstance.get(
-  //       `?method=flickr.photos.search&api_key=${API_KEY}&text=${
-  //         searchValue.value ? searchValue.value : 'nature'
-  //       }&per_page=12&page=1&format=json&nojsoncallback=1`
-  //     );
-  //     setPhoto(response.data.photos.photo);
-  //     // props.updateFotoData(response.data.photos.photo);
-  //   } catch (err) {}
-  // }
-
-  // const initialArr = getInitialArr();
-
   async function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     setIsLoading(true);
@@ -73,8 +54,8 @@ function Searchbar(props: CardsGoodProps) {
             setSearchValue({ value: event.target.value });
           }}
         />
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? 'Загружается...' : 'Загрузить'}
+        <button className="button" type="submit" disabled={isLoading}>
+          {isLoading ? 'Загружается...' : 'Поиск'}
         </button>
       </form>
     </div>

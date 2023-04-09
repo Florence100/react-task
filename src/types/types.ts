@@ -86,21 +86,35 @@ export interface Photo {
   isfamily: string;
 }
 
+export interface PhotoId {
+  title?: string;
+  id?: string;
+  primary?: string;
+  secret?: string;
+  server?: string;
+  url?: string;
+  view_count?: string;
+  comment_count?: string;
+}
+
 export interface Request {
   photo: Array<Photo>;
-  // data: {
-  //   photos: Photos;
-  //   stat: string;
-  // };
-  // status: string;
-  // statusText: string;
-  // headers: object;
-  // config: object;
-  // request: XMLHttpRequest;
 }
 
 export interface GET_Articles {
   photos: Request;
+}
+
+export interface GET_Article {
+  set?: Array<PhotoId>;
+}
+
+export interface IModalProps {
+  active: boolean;
+  id: string;
+  onClose: () => void;
+  modal: Array<PhotoId>;
+  url: string;
 }
 
 export { FormProps };

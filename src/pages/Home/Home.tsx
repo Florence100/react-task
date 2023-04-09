@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Searchbar from '../../components/searchbar/Searchbar';
-import Cards from '../../components/fotoCards/FotoCards';
+import FotoCards from '../../components/fotoCards/FotoCards';
 import { Photo, GET_Articles } from '../../types/types';
 import axiosInstance from '../../services/api';
 import { AxiosResponse } from 'axios';
@@ -35,7 +35,7 @@ function Home() {
   return (
     <div className="wrapper">
       <Searchbar updateFotoData={updateFotoData} />
-      <Cards name={fotoData} />
+      <FotoCards name={fotoData} />
     </div>
   );
 }
