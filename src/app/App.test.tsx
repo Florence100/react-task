@@ -1,8 +1,8 @@
 import { describe, it } from 'vitest';
 import { render } from '@testing-library/react';
 import React from 'react';
-import About from './pages/about/About';
-import UserData from './pages/userdata/UserData';
+import About from '../pages/About/About';
+import UserData from '../pages/userdata/UserData';
 
 describe('App', () => {
   it('renders without crashing', () => {
