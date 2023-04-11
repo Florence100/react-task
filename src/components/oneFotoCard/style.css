@@ -1,0 +1,36 @@
+.card {
+    box-sizing: border-box;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebe6e0;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__title {
+    position: absolute;
+    bottom: 10px;
+    width: 320px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

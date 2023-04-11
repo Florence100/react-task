@@ -1,0 +1,24 @@
+.user-card {
+    box-sizing: border-box;
+    width: 250px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
+    border: 1px solid #ebe6e0;
+    margin: 25px;
+}
+
+.user-card div {
+    margin-bottom: 10px;
+}
+
+.user-card__foto {
+    width: 100px;
+    padding-top: 15px;
+}
+
+.user-card__foto img {
+    width: 100%;
+    height: 100%;
+}
