@@ -6,17 +6,24 @@ import DropDown from '../UI/dropdown/DropDown';
 import CheckBox from '../UI/checkbox/CheckBox';
 import RadioButton from '../UI/radioButton/RadioButton';
 import FileField from '../UI/filefield/FileField';
+import { useDispatch, useSelector } from 'react-redux';
+import { cardUser, cardsUser } from '../../redux/actions';
+import { IState } from '../../types/types';
 
-import { FormProps, INewCard, IFormValues } from '../../types/types';
+import { INewCard, IFormValues } from '../../types/types';
 import './style.css';
 
-function Form(props: FormProps) {
+function Form() {
   const {
     register,
     formState: { errors },
     handleSubmit,
     reset,
   } = useForm<IFormValues>({ reValidateMode: 'onSubmit' });
+
+  const form = useSelector((state: IState) => state.cardUser);
+  const formArray = useSelector((state: IState) => state.cardsUser);
+  const dispatch = useDispatch();
 
   const onSubmit: SubmitHandler<IFormValues> = (data) => {
     const newCard: INewCard = {
@@ -27,7 +34,10 @@ function Form(props: FormProps) {
       userCheckbox: data.checkbox,
       userImg: URL.createObjectURL(data.fileInput[0]),
     };
-    props.updateData(newCard);
+    // props.updateData(newCard);
+    dispatch(cardUser(newCard));
+    dispatch(cardsUser());
+
     alert('Данные успешно сохранены');
     reset();
   };

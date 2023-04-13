@@ -1,19 +1,23 @@
-// import UserCards from 'components/userCards/UserCards';
-import { UPDATE_DATA } from '../redux/actions';
+import { CARDS_USER, cardsUser, CARD_USER, cardUser } from '../redux/actions';
 import { INewCard } from '../types/types';
 
 const newCardArray: Array<INewCard> = [];
-const initialState = { cardsUser: newCardArray };
+const newCardUser: INewCard = {};
+const initialState = { cardsUser: newCardArray, cardUser: newCardUser };
 
-export default function rootReducer(
-  state = initialState,
-  action: { type: string; date: INewCard }
-) {
-  if (action.type === UPDATE_DATA) {
+type ActionsTypes = ReturnType<typeof cardsUser> | ReturnType<typeof cardUser>;
+
+export default function rootReducer(state = initialState, action: ActionsTypes) {
+  if (action.type === CARDS_USER) {
     return {
       ...state,
-      cardsUser: [...state.cardsUser, ...[action.date]],
-      //   userCards: [...[UserCards], ...[action.date]],
+      cardsUser: [...state.cardsUser, ...[state.cardUser]],
+    };
+  }
+  if (action.type === CARD_USER) {
+    return {
+      ...state,
+      cardUser: action.formData,
     };
   }
   return state;

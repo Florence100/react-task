@@ -3,26 +3,28 @@ import './style.css';
 import OneUserCard from '../oneUserCard/OneUserCard';
 import { UserCardsProp } from '../../types/types';
 
-function UserCards(props: UserCardsProp) {
+// function UserCards(props: UserCardsProp) {
+function UserCards() {
   const currentKey = function (min: number, max: number) {
     return Math.random() * (max - min) + min;
   };
+  return <div>TEST</div>;
 
-  if (props.formArr.length === 0) {
-    return (
-      <div className="user-cards">
-        <h3 className="user-cards-title">У вас пока еще нет карточек</h3>
-      </div>
-    );
-  } else {
-    const cards = props.formArr.map((form) => <OneUserCard key={currentKey(0, 100)} form={form} />);
-    return (
-      <div className="user-cards">
-        <h3 className="user-cards-title">Карточки:</h3>
-        <div className="user-cards-box">{cards}</div>
-      </div>
-    );
-  }
+  // if (props.formArr.length === 0) {
+  //   return (
+  //     <div className="user-cards">
+  //       <h3 className="user-cards-title">У вас пока еще нет карточек</h3>
+  //     </div>
+  //   );
+  // } else {
+  //   const cards = props.formArr.map((form) => <OneUserCard key={currentKey(0, 100)} form={form} />);
+  //   return (
+  //     <div className="user-cards">
+  //       <h3 className="user-cards-title">Карточки:</h3>
+  //       <div className="user-cards-box">{cards}</div>
+  //     </div>
+  //   );
+  // }
 }
 
 export default UserCards;

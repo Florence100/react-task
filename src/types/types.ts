@@ -14,12 +14,12 @@ export type UserCardProp = {
 };
 
 export interface INewCard {
-  userName: string | undefined;
-  userDate: string | undefined;
-  userCountry: string | undefined;
-  userCheckbox: boolean;
-  userSex: string;
-  userImg: string;
+  userName?: string | undefined;
+  userDate?: string | undefined;
+  userCountry?: string | undefined;
+  userCheckbox?: boolean;
+  userSex?: string;
+  userImg?: string;
 }
 
 export interface IFormValues {
@@ -67,9 +67,9 @@ export interface IFileFieldProps {
   isError?: null | true;
 }
 
-interface FormProps {
-  updateData: (value: INewCard) => void;
-}
+// interface FormProps {
+//   updateData: (value: INewCard) => void;
+// }
 
 export interface CardsGoodProps {
   updateFotoData: (value: Array<Photo>) => void;
@@ -117,4 +117,9 @@ export interface IModalProps {
   url: string;
 }
 
-export { FormProps };
+export interface IState {
+  cardsUser: Array<INewCard>;
+  cardUser: INewCard;
+}
+
+// export { FormProps };
