@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import counterReducer from '../features/counter/counterSlice';
+import rootReducer from './redux/reducer';
 
 const store = configureStore({
   reducer: rootReducer,

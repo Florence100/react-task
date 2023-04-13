@@ -5,18 +5,16 @@ import { INewCard } from '../types/types';
 const newCardArray: Array<INewCard> = [];
 const initialState = { cardsUser: newCardArray };
 
-export default function counterReducer(
+export default function rootReducer(
   state = initialState,
-  action: {
-    date: INewCard;
-    type: string;
-  }
+  action: { type: string; date: INewCard }
 ) {
   if (action.type === UPDATE_DATA) {
     return {
       ...state,
-      userCards: [...state.cardsUser, ...[action.date]],
+      cardsUser: [...state.cardsUser, ...[action.date]],
       //   userCards: [...[UserCards], ...[action.date]],
     };
   }
+  return state;
 }
