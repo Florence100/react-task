@@ -120,6 +120,7 @@ export interface IModalProps {
 export interface IState {
   cardsUser: Array<INewCard>;
   cardUser: INewCard;
+  search: string;
 }
 
 // export { FormProps };
