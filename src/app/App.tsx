@@ -5,12 +5,10 @@ import NotFound from '../pages/notFound/NotFound';
 import About from '../pages/about/About';
 import UserData from '../pages/userdata/UserData';
 import Navbar from '../components/navbar/Navbar';
-// import Provider from 'react-redux';
 import './style.css';
 
 export function App() {
   return (
-    // <Provider store={store}>
     <div className="App">
       <Navbar />
       <Routes>
@@ -20,7 +18,6 @@ export function App() {
         <Route path="user" element={<UserData />} />
       </Routes>
     </div>
-    // </Provider>
   );
 }
 

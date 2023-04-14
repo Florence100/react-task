@@ -13,13 +13,13 @@ function Searchbar(props: CardsGoodProps) {
   const currentSearch = useSelector((state: IState) => state.search);
 
   const [isLoading, setIsLoading] = useState(false);
-  const [photo, setPhoto] = useState<Photo[]>([]);
-  const valueRef: React.MutableRefObject<string | undefined> = useRef();
+  // const [photo, setPhoto] = useState<Photo[]>([]);
+  // const valueRef: React.MutableRefObject<string | undefined> = useRef();
 
-  useEffect(() => {
-    valueRef.current = currentSearch;
-    localStorage.setItem('searchValue', valueRef.current);
-  }, [searchValue]);
+  // useEffect(() => {
+  //   valueRef.current = currentSearch;
+  //   localStorage.setItem('searchValue', valueRef.current);
+  // }, [searchValue]);
 
   async function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
@@ -30,7 +30,7 @@ function Searchbar(props: CardsGoodProps) {
           currentSearch ? currentSearch : 'nature'
         }&per_page=12&page=1&format=json&nojsoncallback=1`
       );
-      setPhoto(response.data.photos.photo);
+      // setPhoto(response.data.photos.photo);
       props.updateFotoData(response.data.photos.photo);
     } catch (err) {
     } finally {

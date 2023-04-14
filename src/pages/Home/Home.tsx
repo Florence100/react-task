@@ -36,9 +36,9 @@ function Home() {
     //   console.log('ok');
     //   result();
     // }
-    if (localStorage.getItem('searchValue')) {
+    if (currentSearch) {
       console.log('1', currentSearch);
-      result(localStorage.getItem('searchValue') as string);
+      result(currentSearch);
     } else {
       console.log('2', currentSearch);
       result();
