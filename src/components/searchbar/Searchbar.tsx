@@ -36,7 +36,6 @@ function Searchbar(props: CardsGoodProps) {
       setPhoto(response.data.photos.photo);
       props.updateFotoData(response.data.photos.photo);
     } catch (err) {
-      // console.log('error');
     } finally {
       setIsLoading(false);
     }
