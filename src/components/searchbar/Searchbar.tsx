@@ -1,30 +1,23 @@
-import { AxiosResponse } from 'axios';
-import axiosInstance from '../../services/api';
 import React, { useState } from 'react';
-import { GET_Articles, CardsGoodProps, IState } from '../../types/types';
+import { CardsGoodProps, IState } from '../../types/types';
 import { useDispatch, useSelector } from 'react-redux';
 import { searchValue } from '../../redux/actions';
-import './style.css';
+import { useGetPhotosQuery } from '../../services/api';
 
-const API_KEY = '6285715144242bd4e87c78f80ab3cd45';
+import './style.css';
 
 function Searchbar(props: CardsGoodProps) {
   const dispatch = useDispatch();
-  const currentSearch = useSelector((state: IState) => state.search);
-
+  const currentSearch = useSelector((state: IState) => state.rootReducer.search);
   const [isLoading, setIsLoading] = useState(false);
+
+  const { data = [] } = useGetPhotosQuery(currentSearch);
 
   async function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     setIsLoading(true);
+    props.updateFotoData(data.photos.photo);
     try {
-      const response: AxiosResponse<GET_Articles> = await axiosInstance.get(
-        `?method=flickr.photos.search&api_key=${API_KEY}&text=${
-          currentSearch ? currentSearch : 'nature'
-        }&per_page=12&page=1&format=json&nojsoncallback=1`
-      );
-      props.updateFotoData(response.data.photos.photo);
-    } catch (err) {
     } finally {
       setIsLoading(false);
     }

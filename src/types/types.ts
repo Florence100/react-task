@@ -118,9 +118,17 @@ export interface IModalProps {
 }
 
 export interface IState {
-  cardsUser: Array<INewCard>;
-  cardUser: INewCard;
-  search: string;
+  rootReducer: {
+    cardsUser: Array<INewCard>;
+    cardUser: INewCard;
+    search: string;
+  };
+  photoApi: {
+    queries: object;
+    mutations: object;
+    provided: object;
+    subscriptions: object;
+  };
 }
 
 // export { FormProps };

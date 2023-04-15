@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Searchbar from '../../components/searchbar/Searchbar';
 import FotoCards from '../../components/fotoCards/FotoCards';
-import { Photo, GET_Articles, IState } from '../../types/types';
-import axiosInstance from '../../services/api';
-import { AxiosResponse } from 'axios';
+import { Photo, IState } from '../../types/types';
 import { useSelector } from 'react-redux';
-
-const API_KEY = '6285715144242bd4e87c78f80ab3cd45';
+import { useGetPhotosQuery } from '../../services/api';
 
 function Home() {
-  const currentSearch = useSelector((state: IState) => state.search);
+  const currentSearch = useSelector((state: IState) =>
+    state.rootReducer.search ? state.rootReducer.search : ''
+  );
+  const { data = [] } = useGetPhotosQuery(currentSearch);
   const newFotoArray: Array<Photo> = [];
   const [fotoData, setFotoData] = useState(newFotoArray);
 
@@ -17,22 +17,14 @@ function Home() {
     setFotoData(newFotoArr);
   }
 
-  const result = async function onLoading(item = '') {
+  const result = async function onLoading() {
     try {
-      const response: AxiosResponse<GET_Articles> = await axiosInstance.get(
-        `?method=flickr.photos.search&api_key=${API_KEY}&text=${item ? item : 'nature'}
-        &per_page=12&page=1&format=json&nojsoncallback=1`
-      );
-      setFotoData(response.data.photos.photo);
+      setFotoData(data.photos.photo);
     } catch (err) {}
   };
 
   if (fotoData.length === 0) {
-    if (currentSearch) {
-      result(currentSearch);
-    } else {
-      result();
-    }
+    result();
   }
 
   return (

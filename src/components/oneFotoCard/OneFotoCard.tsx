@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import './style.css';
-import { Photo, GET_Article, PhotoId } from '../../types/types';
+import { Photo, PhotoId } from '../../types/types';
 import Modal from '../../components/modal/Modal';
-import axiosInstance from '../../services/api';
-import { AxiosResponse } from 'axios';
-
-const API_KEY = '6285715144242bd4e87c78f80ab3cd45';
+import { useGetOnePhotoQuery } from '../../services/api';
 
 function OneFotoCard(props: Photo) {
   const URL = `https://live.staticflickr.com/${props.server}/${props.id}_${props.secret}_n.jpg`;
@@ -18,12 +15,11 @@ function OneFotoCard(props: Photo) {
     setShowModal(false);
   }
 
+  const { data = [] } = useGetOnePhotoQuery(props.id);
+
   const result = async function onLoading() {
     try {
-      const response: AxiosResponse<GET_Article> = await axiosInstance.get(
-        `?method=flickr.photos.getAllContexts&api_key=${API_KEY}&photo_id=${props.id}&format=json&nojsoncallback=1`
-      );
-      setModal(response.data.set as Array<PhotoId>);
+      setModal(data.set as Array<PhotoId>);
     } catch (err) {}
   };
 

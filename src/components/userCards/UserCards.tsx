@@ -5,7 +5,7 @@ import { IState } from '../../types/types';
 import { useSelector } from 'react-redux';
 
 function UserCards() {
-  const formArray = useSelector((state: IState) => state.cardsUser);
+  const formArray = useSelector((state: IState) => state.rootReducer.cardsUser);
   const currentKey = function (min: number, max: number) {
     return Math.random() * (max - min) + min;
   };
