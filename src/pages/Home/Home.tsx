@@ -28,19 +28,9 @@ function Home() {
   };
 
   if (fotoData.length === 0) {
-    // console.log(fotoData.length);
-    // if (currentSearch) {
-    //   console.log('currentSearch', currentSearch);
-    //   result(currentSearch);
-    // } else {
-    //   console.log('ok');
-    //   result();
-    // }
     if (currentSearch) {
-      console.log('1', currentSearch);
       result(currentSearch);
     } else {
-      console.log('2', currentSearch);
       result();
     }
   }
