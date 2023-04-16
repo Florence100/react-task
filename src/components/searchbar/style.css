@@ -1,0 +1,26 @@
+.main__search {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.button {
+    width: 180px;
+    height: 40px;
+    border: 1px solid #e189b0;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #e189b0;
+    text-transform: uppercase;
+    color: white;
+    box-sizing: border-box;
+    top: -2px;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #a7355d;
+    border: 1px solid #a7355d;
+}
