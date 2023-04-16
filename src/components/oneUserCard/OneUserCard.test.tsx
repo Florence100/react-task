@@ -11,8 +11,9 @@ const testUser = {
   userSex: 'female',
   userImg: 'test.jpg',
 };
+
 describe('CardInfo', async () => {
-  it('renders Cerd for user', async () => {
+  it('renders Card for user', async () => {
     beforeEach(() => {
       render(<OneUserCard key={33} form={testUser} />);
     });

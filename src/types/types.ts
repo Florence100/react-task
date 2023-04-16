@@ -67,10 +67,6 @@ export interface IFileFieldProps {
   isError?: null | true;
 }
 
-// interface FormProps {
-//   updateData: (value: INewCard) => void;
-// }
-
 export interface CardsGoodProps {
   updateFotoData: (value: Array<Photo>) => void;
 }
@@ -130,5 +126,3 @@ export interface IState {
     subscriptions: object;
   };
 }
-
-// export { FormProps };
