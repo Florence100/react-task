@@ -1,4 +1,5 @@
 import React from 'react';
+import 'vite/modulepreload-polyfill';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/home/Home';
 import NotFound from '../pages/notFound/NotFound';

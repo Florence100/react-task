@@ -23,5 +23,8 @@ const vitestConfig: VitestUserConfigInterface = {
 
 export default defineConfig({
   plugins: [react()],
-  test: vitestConfig.test,
+  build: {
+    minify: false,
+  },
+  // test: vitestConfig.test,
 });
