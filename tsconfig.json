@@ -15,5 +15,5 @@
     "baseUrl": "./src",
     "resolveJsonModule": true
   },
-  "include": ["./src/**/*", "styled.d.ts", "server.js", "prerender.ts"]
+  "include": ["./src/**/*", "styled.d.ts", "server.ts", "prerender.ts"]
 }
