@@ -1,4 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
+// import pkg from '@reduxjs/toolkit';
+// const { configureStore } = pkg;
 import rootReducer from './redux/reducer';
 import { photoApi } from './services/api';
 

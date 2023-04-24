@@ -1,16 +1,20 @@
-import ReactDOMServer from 'react-dom/server';
+import ReactDOMServer, { PipeableStream, RenderToPipeableStreamOptions } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom/server';
-import { App } from './app/App';
 import { Provider } from 'react-redux';
+import { WrappedApp } from './app/App';
 import store from './store';
 import React from 'react';
 
-export function render(url: string) {
-  return ReactDOMServer.renderToString(
+const render = function (url: string, options?: RenderToPipeableStreamOptions): PipeableStream {
+  const stream = ReactDOMServer.renderToPipeableStream(
     <Provider store={store}>
       <StaticRouter location={url}>
-        <App />
+        <WrappedApp />
       </StaticRouter>
-    </Provider>
+    </Provider>,
+    options
   );
-}
+  return stream;
+};
+
+export default render;

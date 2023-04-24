@@ -19,7 +19,7 @@ const routesToPrerender = fs.readdirSync(toAbsolute('src/pages')).map((file) => 
     const context = {};
     const appHtml = await render(url, context);
 
-    const html = template.replace(`<!--app-html-->`, appHtml);
+    const html = template.replace(`<!--ssr-outlet-->`, appHtml);
 
     const filePath = `dist/static${url === '/' ? '/index' : url}.html`;
     fs.writeFileSync(toAbsolute(filePath), html);

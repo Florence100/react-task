@@ -1,0 +1,276 @@
+.main__search {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.button {
+    width: 180px;
+    height: 40px;
+    border: 1px solid #e189b0;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #e189b0;
+    text-transform: uppercase;
+    color: white;
+    box-sizing: border-box;
+    top: -2px;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #a7355d;
+    border: 1px solid #a7355d;
+}.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}.card {
+    box-sizing: border-box;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebe6e0;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__title {
+    position: absolute;
+    bottom: 10px;
+    width: 320px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.modal-content {
+    width: 700px;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 25;
+    background: white;
+    padding: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.3;
+	cursor: pointer;
+    background-image: url('/assets/cross-0bdbf430.svg');
+}
+
+.modal-close:hover {
+    opacity: 0.7;
+}
+
+.modal-img {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.modal-info {
+    width: 500px;
+    text-align: center;
+}.links {
+    display: flex;
+    flex-direction: column;
+}.input {
+    width: 385px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bdb7af;
+    font-size: 16px;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+input {
+    cursor: pointer;
+}
+
+.input:hover {
+    border: 1px solid rgba(167, 57, 93, 0.8);
+}
+
+.input:focus {
+    border: 1px solid rgba(167, 57, 93, 0.8);
+}
+
+.input_text {
+    width: 100%;
+}
+
+select {
+    outline: none;
+    border: 1px solid #bdb7af;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+}
+
+select:hover {
+    border: 1px solid rgba(167, 57, 93, 0.8);
+    transition: 0.2s;
+}.message-err {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    color: red;
+}.dropdown {
+    width: 200px;
+}.input-checkbox {
+    cursor: pointer;
+}
+
+.checkbox-value {
+    margin: 10px 0;
+}
+
+.input-checkbox {
+    margin-right: 10px;
+}
+
+label {
+    cursor: pointer;
+}.radiobutton {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}.filefield {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}.form-questions {
+    width: 550px;
+    border: 1px solid rgba(167, 57, 93, 0.5);
+    padding: 35px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    background: rgba(225, 137, 176, 0.1);
+}
+
+.label {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}.user-cards {
+    width: 100%;
+}
+
+.user-cards-title {
+    text-align: center;
+}
+
+.user-cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}.user-card {
+    box-sizing: border-box;
+    width: 250px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
+    border: 1px solid #ebe6e0;
+    margin: 25px;
+}
+
+.user-card div {
+    margin-bottom: 10px;
+}
+
+.user-card__foto {
+    width: 100px;
+    padding-top: 15px;
+}
+
+.user-card__foto img {
+    width: 100%;
+    height: 100%;
+}.header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background-color: #38161f;
+}
+
+.header__nav {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header__link {
+    color: white;
+}
+
+.header__link-active {
+  color: #e189b0;
+}
+
+body {
+    font-size: 16px;
+    background: white;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}

@@ -1,24 +1,79 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+// import fs from 'fs';
+// import path from 'path';
+// import { fileURLToPath } from 'url';
+// import express, { NextFunction, Request, Response } from 'express';
+// import { createServer as createViteServer } from 'vite';
+// import { PipeableStream, RenderToPipeableStreamOptions } from 'react-dom/server';
+
+// const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// async function createServer() {
+//   const app = express();
+//   const cwd = process.cwd();
+
+//   const vite = await createViteServer({
+//     root: cwd,
+//     server: { middlewareMode: true, hmr: true },
+//     appType: 'custom',
+//   });
+
+//   app.use(vite.middlewares);
+
+//   app.use('*', async (req: Request, res: Response, next: NextFunction) => {
+//     const url = req.originalUrl;
+
+//     try {
+//       let template = fs.readFileSync(path.resolve(__dirname, './index.html'), 'utf-8');
+
+//       template = await vite.transformIndexHtml(url, template);
+//       const html = template.split(`<!--ssr-outlet-->`);
+//       const render = (await vite.ssrLoadModule('./src/entry-server.tsx')).render as (
+//         url: string,
+//         options?: RenderToPipeableStreamOptions
+//       ) => PipeableStream;
+
+//       const { pipe } = render(url, {
+//         onShellReady() {
+//           const prevHtml = html[0];
+//           res.write(prevHtml);
+//           pipe(res);
+//         },
+//         onAllReady() {
+//           const resHtml = html.join('');
+//           res.write(resHtml);
+//           res.end();
+//         },
+//       });
+//     } catch (e: unknown) {
+//       const err = e as Error;
+//       vite.ssrFixStacktrace(err);
+//       next(err);
+//     }
+//   });
+
+//   const port = process.env.PORT || 5177;
+
+//   app.listen(port, () => console.log(`App is listening on http://localhost:${port}`));
+// }
+
+// createServer();
+
 import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import renderApp from './dist/server/entry-server.js';
+
+import { ViteDevServer } from 'vite';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const isTest = process.env.VITEST;
 
-process.env.MY_CUSTOM_SECRET = 'API_KEY_qwertyuiop';
-
-const root = process.cwd();
-const isProd = process.env.NODE_ENV === 'production';
-const hmrPort = undefined;
-let vite: import('vite').ViteDevServer;
-
-export async function createServer(
-  root = process.cwd(),
-  isProd = process.env.NODE_ENV === 'production',
-  hmrPort: undefined
-) {
+async function createServer(root = process.cwd(), isProd = process.env.NODE_ENV === 'production') {
   const resolve = (p: string) => path.resolve(__dirname, p);
 
   const indexProd = isProd ? fs.readFileSync(resolve('dist/client/index.html'), 'utf-8') : '';
@@ -28,7 +83,7 @@ export async function createServer(
   /**
    * @type {import('vite').ViteDevServer}
    */
-  // let vite: import('vite').ViteDevServer;
+  let vite: ViteDevServer | undefined;
   if (!isProd) {
     vite = await (
       await import('vite')
@@ -38,18 +93,12 @@ export async function createServer(
       server: {
         middlewareMode: true,
         watch: {
-          // During tests we edit the files too fast and sometimes chokidar
-          // misses change events, so enforce polling for consistency
           usePolling: true,
           interval: 100,
-        },
-        hmr: {
-          port: hmrPort,
         },
       },
       appType: 'custom',
     });
-    // use vite's connect instance as middleware
     app.use(vite.middlewares);
   } else {
     // app.use((await import('compression')).default());
@@ -64,31 +113,44 @@ export async function createServer(
     try {
       const url = req.originalUrl;
 
-      let template, render;
+      let template;
       if (!isProd) {
-        // always read fresh template in dev
         template = fs.readFileSync(resolve('index.html'), 'utf-8');
-        template = await vite.transformIndexHtml(url, template);
-        render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render;
+        if (vite) {
+          template = await vite.transformIndexHtml(url, template);
+        }
+
+        const html = template.split(`<!--ssr-outlet-->`);
+
+        const stream = renderApp(url, {
+          onShellReady() {
+            res.write(html[0]);
+            stream.pipe(res);
+          },
+          onAllReady() {
+            res.write(html[0] + html[1]);
+            res.end();
+          },
+        });
       } else {
         template = indexProd;
-        render = (await import('./dist/server/entry-server.js' as string)).render;
+        const html = template.split(`<!--ssr-outlet-->`);
+
+        const { pipe } = renderApp(url, {
+          onShellReady() {
+            res.write(html[0]);
+            pipe(res);
+          },
+          onAllReady() {
+            res.write(html[0] + html[1]);
+            res.end();
+          },
+        });
       }
-
-      const context = { url: '' };
-      const appHtml = render(url, context);
-
-      if (context.url) {
-        // Somewhere a `<Redirect>` was rendered
-        return res.redirect(301, context.url);
-      }
-
-      const html = template.replace(`<!--app-html-->`, appHtml);
-
-      res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
-    } catch (e: any) {
-      !isProd && vite.ssrFixStacktrace(e);
-      res.status(500).end(e.stack);
+    } catch (e) {
+      !isProd && vite && vite.ssrFixStacktrace(e as Error);
+      console.log((e as Error).stack);
+      res.status(500).end((e as Error).stack);
     }
   });
 
@@ -96,9 +158,9 @@ export async function createServer(
 }
 
 if (!isTest) {
-  createServer(root, isProd, hmrPort).then(({ app }) =>
-    app.listen(5173, () => {
-      console.log('http://localhost:5173');
+  createServer(process.cwd(), process.env.NODE_ENV === 'production').then(({ app }) =>
+    app.listen(5555, () => {
+      console.log('http://localhost:5555');
     })
   );
 }
