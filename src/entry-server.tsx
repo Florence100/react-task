@@ -5,7 +5,7 @@ import { WrappedApp } from './app/App';
 import store from './store';
 import React from 'react';
 
-const render = function (url: string, options?: RenderToPipeableStreamOptions): PipeableStream {
+export function render(url: string, options?: RenderToPipeableStreamOptions): PipeableStream {
   const stream = ReactDOMServer.renderToPipeableStream(
     <Provider store={store}>
       <StaticRouter location={url}>
@@ -15,6 +15,4 @@ const render = function (url: string, options?: RenderToPipeableStreamOptions): 
     options
   );
   return stream;
-};
-
-export default render;
+}
