@@ -51,7 +51,7 @@ async function createServer() {
     }
   });
 
-  const port = process.env.PORT || 5000;
+  const port = process.env.PORT || 5177;
   app.listen(port, () => console.log(`App is listening on http://localhost:${port}`));
 }
 

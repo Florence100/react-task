@@ -1,4 +1,4 @@
 .eslintrc.cjs
 cypress.config.ts
-spec.cy.ts
+home_page.cy.ts
 node_modules

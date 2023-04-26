@@ -9,4 +9,8 @@ export default defineConfig({
     },
     baseUrl: 'http://localhost:5177',
   },
+  video: false,
+  fixturesFolder: false,
+  screenshotOnRunFailure: false,
 });
+
