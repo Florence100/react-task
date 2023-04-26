@@ -68,7 +68,7 @@ function Form() {
         <FileField register={register} required={true} isError={errors.fileInput ? true : null} />
       </label>
       <p className="label">* - Поля, обязательные к заполнению</p>
-      <button className="button" type="submit">
+      <button className="button" type="submit" data-test="form-submit">
         Отправить
       </button>
     </form>

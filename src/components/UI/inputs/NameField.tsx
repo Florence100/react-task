@@ -10,6 +10,7 @@ function NameField({ register, isError }: IInputProps) {
         {...register('textInput', { required: true })}
         className="input input_text"
         type="text"
+        data-test="input-name"
       />
       {isError === true ? (
         <MessageErr errorText="Пожалуйста, убедитесь, что поле заполнено" />

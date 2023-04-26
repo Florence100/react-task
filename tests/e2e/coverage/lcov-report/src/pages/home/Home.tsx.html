@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.64% </span>
+                <span class="strong">94.11% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/17</span>
+                <span class='fraction'>16/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/15</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -108,37 +108,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from 'react';
 import Searchbar from '../../components/searchbar/Searchbar';
 import FotoCards from '../../components/fotoCards/FotoCards';
@@ -146,29 +146,29 @@ import { Photo, IState } from '../../types/types';
 import { useSelector } from 'react-redux';
 import { useGetPhotosQuery } from '../../services/api';
 &nbsp;
-function <span class="fstat-no" title="function not covered" >Home<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>) <span class="cstat-no" title="statement not covered" >{</span></span></span>
-  const currentSearch = <span class="cstat-no" title="statement not covered" >useSelector(<span class="fstat-no" title="function not covered" >(s</span>tate: IState) =&gt;</span>
-<span class="cstat-no" title="statement not covered" >    state.rootReducer.search ? state.rootReducer.search : ''</span>
+function Home() {
+  const currentSearch = useSelector((state: IState) =&gt;
+    state.rootReducer.search ? <span class="branch-0 cbranch-no" title="branch not covered" >state.rootReducer.search : '</span>'
   );
-  const { data = <span class="branch-0 cbranch-no" title="branch not covered" >[] }</span> = <span class="cstat-no" title="statement not covered" >useGetPhotosQuery(currentSearch);</span>
-  const newFotoArray: Array&lt;Photo&gt; = <span class="cstat-no" title="statement not covered" >[];</span>
-  const [fotoData, setFotoData] = <span class="cstat-no" title="statement not covered" >useState(newFotoArray);</span>
+  const { data = [] } = useGetPhotosQuery(currentSearch);
+  const newFotoArray: Array&lt;Photo&gt; = [];
+  const [fotoData, setFotoData] = useState(newFotoArray);
 &nbsp;
   function <span class="fstat-no" title="function not covered" >updateFotoData(n</span>ewFotoArr: Array&lt;Photo&gt;) {
 <span class="cstat-no" title="statement not covered" >    setFotoData(newFotoArr);</span>
   }
 &nbsp;
-  const result = <span class="cstat-no" title="statement not covered" >async function <span class="fstat-no" title="function not covered" >onLoading() {</span></span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      setFotoData(data.photos.photo);</span>
+  const result = async function onLoading() {
+    try {
+      setFotoData(data.photos.photo);
     } catch (err) {}
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (fotoData.length === 0) {</span>
-<span class="cstat-no" title="statement not covered" >    result();</span>
+  if (fotoData.length === 0) {
+    result();
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;div className="wrapper"&gt;
       &lt;Searchbar updateFotoData={updateFotoData} /&gt;
       &lt;FotoCards name={fotoData} /&gt;
@@ -184,7 +184,7 @@ export default Home;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-26T14:53:59.350Z
+                at 2023-04-26T21:20:58.088Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

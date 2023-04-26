@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">91.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/12</span>
+                <span class='fraction'>11/12</span>
             </div>
         
             
@@ -155,17 +155,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -181,7 +181,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -216,9 +216,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import NameField from '../UI/inputs/NameField';
@@ -263,33 +263,33 @@ function Form() {
     &lt;form onSubmit={handleSubmit(onSubmit)} className="form-questions"&gt;
       &lt;label&gt;
         &lt;p className="label"&gt;* Ваше имя:&lt;/p&gt;
-        &lt;NameField register={register} required={true} isError={errors.textInput ? <span class="branch-0 cbranch-no" title="branch not covered" >true : n</span>ull} /&gt;
+        &lt;NameField register={register} required={true} isError={errors.textInput ? true : null} /&gt;
       &lt;/label&gt;
       &lt;label&gt;
         &lt;p className="label"&gt;* Пол:&lt;/p&gt;
         &lt;RadioButton
           register={register}
           required={true}
-          isError={errors.radioInput ? <span class="branch-0 cbranch-no" title="branch not covered" >true : n</span>ull}
+          isError={errors.radioInput ? true : null}
         /&gt;
       &lt;/label&gt;
       &lt;label&gt;
         &lt;p className="label"&gt;* Дата рождения:&lt;/p&gt;
-        &lt;DataField register={register} required={true} isError={errors.dateInput ? <span class="branch-0 cbranch-no" title="branch not covered" >true : n</span>ull} /&gt;
+        &lt;DataField register={register} required={true} isError={errors.dateInput ? true : null} /&gt;
       &lt;/label&gt;
       &lt;label&gt;
         &lt;p className="label"&gt;* Ваша страна:&lt;/p&gt;
         &lt;DropDown register={register} required={true} isError={errors.select ? <span class="branch-0 cbranch-no" title="branch not covered" >true : n</span>ull} /&gt;
       &lt;/label&gt;
       &lt;label&gt;
-        &lt;CheckBox register={register} required={true} isError={errors.checkbox ? <span class="branch-0 cbranch-no" title="branch not covered" >true : n</span>ull} /&gt;
+        &lt;CheckBox register={register} required={true} isError={errors.checkbox ? true : null} /&gt;
       &lt;/label&gt;
       &lt;label&gt;
         &lt;p className="label"&gt;* Загрузить фото:&lt;/p&gt;
-        &lt;FileField register={register} required={true} isError={errors.fileInput ? <span class="branch-0 cbranch-no" title="branch not covered" >true : n</span>ull} /&gt;
+        &lt;FileField register={register} required={true} isError={errors.fileInput ? true : null} /&gt;
       &lt;/label&gt;
       &lt;p className="label"&gt;* - Поля, обязательные к заполнению&lt;/p&gt;
-      &lt;button className="button" type="submit"&gt;
+      &lt;button className="button" type="submit" data-test="form-submit"&gt;
         Отправить
       &lt;/button&gt;
     &lt;/form&gt;
@@ -304,7 +304,7 @@ export default Form;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-26T14:53:59.350Z
+                at 2023-04-26T21:20:58.088Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

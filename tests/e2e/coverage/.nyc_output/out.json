@@ -1,6 +1,6 @@
 {
-  "C:/Users/Anastasia/react-task/src/redux/actions.ts": {
-    "path": "C:/Users/Anastasia/react-task/src/redux/actions.ts",
+  "D:/react-task/src/redux/actions.ts": {
+    "path": "D:/react-task/src/redux/actions.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -203,15 +203,15 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
+      "0": 4,
+      "1": 4,
+      "2": 4,
       "3": 0,
-      "4": 1,
+      "4": 4,
       "5": 0,
-      "6": 1,
+      "6": 4,
       "7": 0,
-      "8": 1,
+      "8": 4,
       "9": 0
     },
     "f": {
@@ -224,16 +224,16 @@
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "C:/Users/Anastasia/react-task/src/redux/actions.ts"
+        "D:/react-task/src/redux/actions.ts"
       ],
       "mappings": "AAEO,aAAM,aAAa;AACnB,aAAM,YAAY;AAClB,aAAM,eAAe;AAE5B,SAAS,uBAAyC,KAAQ;AACxD,SAAO;AACT;AAEO,aAAM,YAAY,MAAM;AAC7B,SAAO,EAAE,MAAM,uBAAuB,UAAU,EAAE;AACpD;AAEO,aAAM,WAAW,CAAC,aAAuB;AAC9C,SAAO,EAAE,MAAM,uBAAuB,SAAS,GAAG,SAAS;AAC7D;AAEO,aAAM,cAAc,CAAC,UAAkB;AAC5C,SAAO,EAAE,MAAM,uBAAuB,YAAY,GAAG,MAAM;AAC7D;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "83e2b234d2b47ee5d2bc99be977efe0fb87b5e67"
+    "hash": "95cce95a289168efe4a1494494fe70d9db14f9a8"
   },
-  "C:/Users/Anastasia/react-task/src/services/api.ts": {
-    "path": "C:/Users/Anastasia/react-task/src/services/api.ts",
+  "D:/react-task/src/services/api.ts": {
+    "path": "D:/react-task/src/services/api.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -409,37 +409,37 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 0,
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 1,
       "4": 0,
-      "5": 1
+      "5": 4
     },
     "f": {
-      "0": 1,
-      "1": 0,
+      "0": 4,
+      "1": 1,
       "2": 0
     },
     "b": {
       "0": [
         0,
-        0
+        1
       ]
     },
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "C:/Users/Anastasia/react-task/src/services/api.ts"
+        "D:/react-task/src/services/api.ts"
       ],
       "mappings": "AAAA,SAAS,WAAW,sBAAsB;AAE1C,MAAM,UAAU;AAET,aAAM,WAAW,UAAU;AAAA,EAChC,aAAa;AAAA,EACb,WAAW,eAAe,EAAE,SAAS,uCAAuC,CAAC;AAAA,EAC7E,WAAW,CAAC,WAAW;AAAA,IACrB,WAAW,MAAM,MAAM;AAAA,MACrB,OAAO,CAAC,WACN,wCAAwC,gBACtC,SAAS,SAAS;AAAA,IAExB,CAAC;AAAA,IACD,aAAa,MAAM,MAAM;AAAA,MACvB,OAAO,CAAC,OACN,gDAAgD,oBAAoB;AAAA,IACxE,CAAC;AAAA,EACH;AACF,CAAC;AAEM,aAAM,EAAE,mBAAmB,oBAAoB,IAAI;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "0c4e6f52693aa7d7f4361acea9beac75aae0ec78"
+    "hash": "c59bc902e1a0f8dfb6a0b536d84f1b0b87a3521a"
   },
-  "C:/Users/Anastasia/react-task/src/components/searchbar/Searchbar.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/searchbar/Searchbar.tsx",
+  "D:/react-task/src/components/searchbar/Searchbar.tsx": {
+    "path": "D:/react-task/src/components/searchbar/Searchbar.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -508,7 +508,7 @@
         },
         "end": {
           "line": 12,
-          "column": 112
+          "column": 96
         }
       },
       "7": {
@@ -748,7 +748,7 @@
         },
         "end": {
           "line": 76,
-          "column": 138
+          "column": 122
         }
       },
       "31": {
@@ -1221,38 +1221,38 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 6,
+      "10": 6,
+      "11": 6,
+      "12": 11,
+      "13": 6,
+      "14": 6,
       "15": 0,
       "16": 0,
       "17": 0,
       "18": 0,
       "19": 0,
-      "20": 0,
+      "20": 6,
       "21": 0,
-      "22": 1,
-      "23": 0,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 0,
-      "31": 0,
+      "22": 4,
+      "23": 1,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 2,
+      "31": 2,
       "32": 0,
       "33": 0,
       "34": 0,
@@ -1260,33 +1260,33 @@
       "36": 0
     },
     "f": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
+      "0": 4,
+      "1": 6,
+      "2": 11,
       "3": 0,
       "4": 0,
-      "5": 0,
-      "6": 0,
+      "5": 1,
+      "6": 2,
       "7": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0
+        6
       ],
       "3": [
         0,
-        0
+        6
       ],
       "4": [
-        1,
+        4,
         0
       ],
       "5": [
@@ -1331,15 +1331,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/searchbar/Searchbar.tsx"
+        "D:/react-task/src/components/searchbar/Searchbar.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/searchbar/Searchbar.tsx"
+      "file": "D:/react-task/src/components/searchbar/Searchbar.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "5a00d93a3940b40d6276b9a2ea01efe8da53e9d8"
+    "hash": "bf9af9736e1ddcc37df06c8be7ca8fb59bdc2bd7"
   },
-  "C:/Users/Anastasia/react-task/src/components/modal/Modal.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/modal/Modal.tsx",
+  "D:/react-task/src/components/modal/Modal.tsx": {
+    "path": "D:/react-task/src/components/modal/Modal.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -1408,7 +1408,7 @@
         },
         "end": {
           "line": 12,
-          "column": 104
+          "column": 88
         }
       },
       "7": {
@@ -1588,7 +1588,7 @@
         },
         "end": {
           "line": 123,
-          "column": 130
+          "column": 114
         }
       },
       "25": {
@@ -2371,14 +2371,14 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
       "9": 0,
       "10": 0,
@@ -2389,14 +2389,14 @@
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 0,
-      "25": 0,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 2,
+      "25": 2,
       "26": 0,
       "27": 0,
       "28": 0,
@@ -2404,21 +2404,21 @@
       "30": 0
     },
     "f": {
-      "0": 1,
+      "0": 4,
       "1": 0,
       "2": 0,
       "3": 0,
-      "4": 0,
+      "4": 2,
       "5": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
         0,
@@ -2468,7 +2468,7 @@
         0
       ],
       "13": [
-        1,
+        4,
         0
       ],
       "14": [
@@ -2502,15 +2502,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/modal/Modal.tsx"
+        "D:/react-task/src/components/modal/Modal.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/modal/Modal.tsx"
+      "file": "D:/react-task/src/components/modal/Modal.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b9e4c2e0ab342e9b691fe8f773dbbc05f0fcd4c7"
+    "hash": "68cca3f3baf856b404baa7b7a19ccb74d0bb9765"
   },
-  "C:/Users/Anastasia/react-task/src/components/oneFotoCard/OneFotoCard.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/oneFotoCard/OneFotoCard.tsx",
+  "D:/react-task/src/components/oneFotoCard/OneFotoCard.tsx": {
+    "path": "D:/react-task/src/components/oneFotoCard/OneFotoCard.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -2579,7 +2579,7 @@
         },
         "end": {
           "line": 12,
-          "column": 116
+          "column": 100
         }
       },
       "7": {
@@ -2829,7 +2829,7 @@
         },
         "end": {
           "line": 89,
-          "column": 142
+          "column": 126
         }
       },
       "32": {
@@ -3266,15 +3266,15 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
       "9": 0,
       "10": 0,
       "11": 0,
@@ -3289,16 +3289,16 @@
       "20": 0,
       "21": 0,
       "22": 0,
-      "23": 1,
+      "23": 4,
       "24": 0,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 1,
-      "31": 0,
-      "32": 0,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 4,
+      "31": 2,
+      "32": 2,
       "33": 0,
       "34": 0,
       "35": 0,
@@ -3306,29 +3306,29 @@
       "37": 0
     },
     "f": {
-      "0": 1,
+      "0": 4,
       "1": 0,
       "2": 0,
       "3": 0,
       "4": 0,
       "5": 0,
-      "6": 0,
+      "6": 2,
       "7": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
         0
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -3371,15 +3371,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/oneFotoCard/OneFotoCard.tsx"
+        "D:/react-task/src/components/oneFotoCard/OneFotoCard.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/oneFotoCard/OneFotoCard.tsx"
+      "file": "D:/react-task/src/components/oneFotoCard/OneFotoCard.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "5d31b267fc592a638d426141793c92f14d8709d0"
+    "hash": "ca1cdeb1b810118265d514468b0dd4413e0fc435"
   },
-  "C:/Users/Anastasia/react-task/src/components/fotoCards/FotoCards.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/fotoCards/FotoCards.tsx",
+  "D:/react-task/src/components/fotoCards/FotoCards.tsx": {
+    "path": "D:/react-task/src/components/fotoCards/FotoCards.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -3448,7 +3448,7 @@
         },
         "end": {
           "line": 12,
-          "column": 112
+          "column": 96
         }
       },
       "7": {
@@ -3558,7 +3558,7 @@
         },
         "end": {
           "line": 41,
-          "column": 138
+          "column": 122
         }
       },
       "18": {
@@ -3897,25 +3897,25 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 6,
       "9": 0,
-      "10": 0,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 1,
-      "17": 0,
-      "18": 0,
+      "10": 6,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 2,
+      "18": 2,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -3923,23 +3923,23 @@
       "23": 0
     },
     "f": {
-      "0": 1,
-      "1": 0,
+      "0": 4,
+      "1": 6,
       "2": 0,
-      "3": 0,
+      "3": 2,
       "4": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -3975,15 +3975,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/fotoCards/FotoCards.tsx"
+        "D:/react-task/src/components/fotoCards/FotoCards.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/fotoCards/FotoCards.tsx"
+      "file": "D:/react-task/src/components/fotoCards/FotoCards.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "65475205f598041148651a611c9c5a8ad99cf62f"
+    "hash": "5e240e342a46e8b6908ead19e555c836c28dfb1e"
   },
-  "C:/Users/Anastasia/react-task/src/pages/home/Home.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/pages/home/Home.tsx",
+  "D:/react-task/src/pages/home/Home.tsx": {
+    "path": "D:/react-task/src/pages/home/Home.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -4052,7 +4052,7 @@
         },
         "end": {
           "line": 12,
-          "column": 97
+          "column": 81
         }
       },
       "7": {
@@ -4292,7 +4292,7 @@
         },
         "end": {
           "line": 73,
-          "column": 123
+          "column": 107
         }
       },
       "31": {
@@ -4795,38 +4795,38 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 6,
+      "10": 6,
+      "11": 10,
+      "12": 6,
+      "13": 6,
+      "14": 6,
       "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 1,
-      "23": 0,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 0,
-      "31": 0,
+      "16": 6,
+      "17": 6,
+      "18": 6,
+      "19": 6,
+      "20": 6,
+      "21": 6,
+      "22": 4,
+      "23": 1,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 2,
+      "31": 2,
       "32": 0,
       "33": 0,
       "34": 0,
@@ -4834,37 +4834,37 @@
       "36": 0
     },
     "f": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
+      "0": 4,
+      "1": 6,
+      "2": 10,
       "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
+      "4": 6,
+      "5": 1,
+      "6": 2,
       "7": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
         0,
-        0
+        10
       ],
       "3": [
-        0
+        6
       ],
       "4": [
-        0,
+        6,
         0
       ],
       "5": [
-        1,
+        4,
         0
       ],
       "6": [
@@ -4907,15 +4907,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/pages/home/Home.tsx"
+        "D:/react-task/src/pages/home/Home.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/pages/home/Home.tsx"
+      "file": "D:/react-task/src/pages/home/Home.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "1f38fa769f2ec4e73d93495531757589666ac7d4"
+    "hash": "f544945db43e6cb5854633b6a70261f403d4cb09"
   },
-  "C:/Users/Anastasia/react-task/src/pages/notFound/NotFound.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/pages/notFound/NotFound.tsx",
+  "D:/react-task/src/pages/notFound/NotFound.tsx": {
+    "path": "D:/react-task/src/pages/notFound/NotFound.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -4984,7 +4984,7 @@
         },
         "end": {
           "line": 12,
-          "column": 105
+          "column": 89
         }
       },
       "7": {
@@ -5074,7 +5074,7 @@
         },
         "end": {
           "line": 58,
-          "column": 131
+          "column": 115
         }
       },
       "16": {
@@ -5389,23 +5389,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -5413,22 +5413,22 @@
       "21": 0
     },
     "f": {
-      "0": 1,
+      "0": 4,
       "1": 0,
-      "2": 0,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -5451,15 +5451,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/pages/notFound/NotFound.tsx"
+        "D:/react-task/src/pages/notFound/NotFound.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/pages/notFound/NotFound.tsx"
+      "file": "D:/react-task/src/pages/notFound/NotFound.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "20840c407e4382a7e467f73d9709e2fed6f6f892"
+    "hash": "3dd4af3748922ef0ae8453c9edb384fe021d68f0"
   },
-  "C:/Users/Anastasia/react-task/src/pages/about/About.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/pages/about/About.tsx",
+  "D:/react-task/src/pages/about/About.tsx": {
+    "path": "D:/react-task/src/pages/about/About.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -5528,7 +5528,7 @@
         },
         "end": {
           "line": 12,
-          "column": 99
+          "column": 83
         }
       },
       "7": {
@@ -5618,7 +5618,7 @@
         },
         "end": {
           "line": 38,
-          "column": 125
+          "column": 109
         }
       },
       "16": {
@@ -5933,23 +5933,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 0,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -5957,22 +5957,22 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
+      "0": 4,
+      "1": 4,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -5994,15 +5994,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/pages/about/About.tsx"
+        "D:/react-task/src/pages/about/About.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/pages/about/About.tsx"
+      "file": "D:/react-task/src/pages/about/About.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "e711fe99ed961cf0f91c313b414f1e6333f1eab4"
+    "hash": "16ca7290ec574cf996e19f25d799e523c2e22802"
   },
-  "C:/Users/Anastasia/react-task/src/components/message-err/MessageErr.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/message-err/MessageErr.tsx",
+  "D:/react-task/src/components/message-err/MessageErr.tsx": {
+    "path": "D:/react-task/src/components/message-err/MessageErr.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -6071,7 +6071,7 @@
         },
         "end": {
           "line": 12,
-          "column": 115
+          "column": 99
         }
       },
       "7": {
@@ -6161,7 +6161,7 @@
         },
         "end": {
           "line": 35,
-          "column": 141
+          "column": 125
         }
       },
       "16": {
@@ -6476,23 +6476,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 12,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 48,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -6500,22 +6500,22 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 12,
-      "2": 0,
+      "0": 4,
+      "1": 48,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -6539,15 +6539,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/message-err/MessageErr.tsx"
+        "D:/react-task/src/components/message-err/MessageErr.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/message-err/MessageErr.tsx"
+      "file": "D:/react-task/src/components/message-err/MessageErr.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "206caea9d9439963fbc9a1a377cb4a79adabab6d"
+    "hash": "e4380d8f5e4b417b01e204a901bde43b7e207c3a"
   },
-  "C:/Users/Anastasia/react-task/src/components/UI/inputs/NameField.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/UI/inputs/NameField.tsx",
+  "D:/react-task/src/components/UI/inputs/NameField.tsx": {
+    "path": "D:/react-task/src/components/UI/inputs/NameField.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -6616,7 +6616,7 @@
         },
         "end": {
           "line": 12,
-          "column": 112
+          "column": 96
         }
       },
       "7": {
@@ -6706,7 +6706,7 @@
         },
         "end": {
           "line": 56,
-          "column": 138
+          "column": 122
         }
       },
       "16": {
@@ -7057,23 +7057,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -7081,26 +7081,26 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        2,
+        6
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -7114,7 +7114,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAOI,mBACE,cADF;AAPJ,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AAEP,OAAOC,gBAAgB;AAEvB,SAASC,UAAU;AAAA,EAAEC;AAAAA,EAAUC;AAAqB,GAAG;AACrD,SACE,mCACE;AAAA,2BAAC,WACC,GAAID,SAAS,aAAa;AAAA,MAAEE,UAAU;AAAA,IAAK,CAAC,GAC5C,WAAU,oBACV,MAAK,UAHP;AAAA;AAAA;AAAA;AAAA,WAGa;AAAA,IAEZD,YAAY,OACX,uBAAC,cAAW,WAAU,+CAAtB;AAAA;AAAA;AAAA;AAAA,WAAiE,IAEjE,uBAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,OATf;AAAA;AAAA;AAAA;AAAA,SAWA;AAEJ;AAACE,KAfQJ;AAiBT,eAAeA;AAAU;AAAAK",
+      "mappings": "AAOI,mBACE,cADF;AAPJ,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AAEP,OAAOC,gBAAgB;AAEvB,SAASC,UAAU;AAAA,EAAEC;AAAAA,EAAUC;AAAqB,GAAG;AACrD,SACE,mCACE;AAAA,2BAAC,WACC,GAAID,SAAS,aAAa;AAAA,MAAEE,UAAU;AAAA,IAAK,CAAC,GAC5C,WAAU,oBACV,MAAK,QACL,aAAU,gBAJZ;AAAA;AAAA;AAAA;AAAA,WAIwB;AAAA,IAEvBD,YAAY,OACX,uBAAC,cAAW,WAAU,+CAAtB;AAAA;AAAA;AAAA;AAAA,WAAiE,IAEjE,uBAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,OAVf;AAAA;AAAA;AAAA;AAAA,SAYA;AAEJ;AAACE,KAhBQJ;AAkBT,eAAeA;AAAU;AAAAK",
       "names": [
         "React",
         "MessageErr",
@@ -7126,15 +7126,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/UI/inputs/NameField.tsx"
+        "D:/react-task/src/components/UI/inputs/NameField.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/UI/inputs/NameField.tsx"
+      "file": "D:/react-task/src/components/UI/inputs/NameField.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "4f93dfd80ed645664289da480d79e3897323e27f"
+    "hash": "22d3266ba000b050aa6f81b7bad07d89af687874"
   },
-  "C:/Users/Anastasia/react-task/src/components/UI/inputs/DataField.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/UI/inputs/DataField.tsx",
+  "D:/react-task/src/components/UI/inputs/DataField.tsx": {
+    "path": "D:/react-task/src/components/UI/inputs/DataField.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -7203,7 +7203,7 @@
         },
         "end": {
           "line": 12,
-          "column": 112
+          "column": 96
         }
       },
       "7": {
@@ -7293,7 +7293,7 @@
         },
         "end": {
           "line": 56,
-          "column": 138
+          "column": 122
         }
       },
       "16": {
@@ -7644,23 +7644,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -7668,26 +7668,26 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        2,
+        6
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -7713,15 +7713,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/UI/inputs/DataField.tsx"
+        "D:/react-task/src/components/UI/inputs/DataField.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/UI/inputs/DataField.tsx"
+      "file": "D:/react-task/src/components/UI/inputs/DataField.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "5232679feeb8d1625d5d1f20b8d284377f3942e5"
+    "hash": "cb576d4ee45c5612365b45c6554be7a7b2605052"
   },
-  "C:/Users/Anastasia/react-task/src/components/UI/dropdown/DropDown.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/UI/dropdown/DropDown.tsx",
+  "D:/react-task/src/components/UI/dropdown/DropDown.tsx": {
+    "path": "D:/react-task/src/components/UI/dropdown/DropDown.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -7790,7 +7790,7 @@
         },
         "end": {
           "line": 12,
-          "column": 113
+          "column": 97
         }
       },
       "7": {
@@ -7880,7 +7880,7 @@
         },
         "end": {
           "line": 77,
-          "column": 139
+          "column": 123
         }
       },
       "16": {
@@ -8231,23 +8231,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -8255,26 +8255,26 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
         0,
-        2
+        8
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -8300,15 +8300,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/UI/dropdown/DropDown.tsx"
+        "D:/react-task/src/components/UI/dropdown/DropDown.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/UI/dropdown/DropDown.tsx"
+      "file": "D:/react-task/src/components/UI/dropdown/DropDown.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "ccce197eeb7ee975fd0007a91da67b6fb4b2753d"
+    "hash": "e2db94ecfc1aca934b1fdddc4fbd7ec6347f3795"
   },
-  "C:/Users/Anastasia/react-task/src/components/UI/checkbox/CheckBox.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/UI/checkbox/CheckBox.tsx",
+  "D:/react-task/src/components/UI/checkbox/CheckBox.tsx": {
+    "path": "D:/react-task/src/components/UI/checkbox/CheckBox.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -8377,7 +8377,7 @@
         },
         "end": {
           "line": 12,
-          "column": 113
+          "column": 97
         }
       },
       "7": {
@@ -8467,7 +8467,7 @@
         },
         "end": {
           "line": 71,
-          "column": 139
+          "column": 123
         }
       },
       "16": {
@@ -8818,23 +8818,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -8842,26 +8842,26 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        2,
+        6
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -8875,7 +8875,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAOI,mBAIQ,cAJR;AAPJ,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AAEP,OAAOC,gBAAgB;AAEvB,SAASC,SAAS;AAAA,EAAEC;AAAAA,EAAUC;AAAwB,GAAG;AACvD,SACE,mCACE;AAAA,2BAAC,SAAI,WAAU,YACb,iCAAC,OAAE,WAAU,kBACX,iCAAC,WACC;AAAA,6BAAC,WACC,GAAID,SAAS,YAAY;AAAA,QAAEE,UAAU;AAAA,MAAK,CAAC,GAC3C,MAAK,YACL,WAAU,kBACV,OAAM,+CAJR;AAAA;AAAA;AAAA;AAAA,aAImD;AAAA,MACjD;AAAA,SANJ;AAAA;AAAA;AAAA;AAAA,WAQA,KATF;AAAA;AAAA;AAAA;AAAA,WAUA,KAXF;AAAA;AAAA;AAAA;AAAA,WAYA;AAAA,IACCD,YAAY,OACX,uBAAC,cAAW,WAAU,0DAAtB;AAAA;AAAA;AAAA;AAAA,WAA4E,IAE5E,uBAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,OAjBf;AAAA;AAAA;AAAA;AAAA,SAmBA;AAEJ;AAACE,KAvBQJ;AAyBT,eAAeA;AAAS;AAAAK",
+      "mappings": "AAOI,mBAIQ,cAJR;AAPJ,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AAEP,OAAOC,gBAAgB;AAEvB,SAASC,SAAS;AAAA,EAAEC;AAAAA,EAAUC;AAAwB,GAAG;AACvD,SACE,mCACE;AAAA,2BAAC,SAAI,WAAU,YACb,iCAAC,OAAE,WAAU,kBACX,iCAAC,WACC;AAAA,6BAAC,WACC,GAAID,SAAS,YAAY;AAAA,QAAEE,UAAU;AAAA,MAAK,CAAC,GAC3C,MAAK,YACL,WAAU,kBACV,OAAM,+CAJR;AAAA;AAAA;AAAA;AAAA,aAImD;AAAA;AAAA,SALrD;AAAA;AAAA;AAAA;AAAA,WAQA,KATF;AAAA;AAAA;AAAA;AAAA,WAUA,KAXF;AAAA;AAAA;AAAA;AAAA,WAYA;AAAA,IACCD,YAAY,OACX,uBAAC,cAAW,WAAU,0DAAtB;AAAA;AAAA;AAAA;AAAA,WAA4E,IAE5E,uBAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,OAjBf;AAAA;AAAA;AAAA;AAAA,SAmBA;AAEJ;AAACE,KAvBQJ;AAyBT,eAAeA;AAAS;AAAAK",
       "names": [
         "React",
         "MessageErr",
@@ -8887,15 +8887,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/UI/checkbox/CheckBox.tsx"
+        "D:/react-task/src/components/UI/checkbox/CheckBox.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/UI/checkbox/CheckBox.tsx"
+      "file": "D:/react-task/src/components/UI/checkbox/CheckBox.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "77bac284a0b9492419fef76114726ae6afb2614e"
+    "hash": "f3e773279acb7c00b65637713f6464d6cd496bba"
   },
-  "C:/Users/Anastasia/react-task/src/components/UI/radioButton/RadioButton.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/UI/radioButton/RadioButton.tsx",
+  "D:/react-task/src/components/UI/radioButton/RadioButton.tsx": {
+    "path": "D:/react-task/src/components/UI/radioButton/RadioButton.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -8964,7 +8964,7 @@
         },
         "end": {
           "line": 12,
-          "column": 119
+          "column": 103
         }
       },
       "7": {
@@ -9054,7 +9054,7 @@
         },
         "end": {
           "line": 85,
-          "column": 145
+          "column": 129
         }
       },
       "16": {
@@ -9405,23 +9405,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -9429,26 +9429,26 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        2,
+        6
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -9462,7 +9462,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAUU;AAVV,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AAEP,OAAOC,gBAAgB;AAEvB,SAASC,YAAY;AAAA,EAAEC;AAAAA,EAAUC;AAAqB,GAAG;AACvD,SACE,uBAAC,SACC;AAAA,2BAAC,SAAI,WAAU,eACb;AAAA,6BAAC,WACC;AAAA,+BAAC,WAAM,MAAK,SAAQ,GAAID,SAAS,cAAc;AAAA,UAAEE,UAAU;AAAA,QAAK,CAAC,GAAG,OAAM,aAA1E;AAAA;AAAA;AAAA;AAAA,eAAmF;AAAA,QAAI;AAAA,QAAI;AAAA,WAD7F;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA,MACA,uBAAC,WACC;AAAA,+BAAC,WAAM,MAAK,SAAQ,GAAIF,SAAS,cAAc;AAAA,UAAEE,UAAU;AAAA,QAAK,CAAC,GAAG,OAAM,aAA1E;AAAA;AAAA;AAAA;AAAA,eAAmF;AAAA,QAAI;AAAA,QAAI;AAAA,WAD7F;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA,SARF;AAAA;AAAA;AAAA;AAAA,WASA;AAAA,IACCD,YAAY,OACX,uBAAC,cAAW,WAAU,+CAAtB;AAAA;AAAA;AAAA;AAAA,WAAiE,IAEjE,uBAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,OAdf;AAAA;AAAA;AAAA;AAAA,SAgBA;AAEJ;AAACE,KApBQJ;AAsBT,eAAeA;AAAY;AAAAK",
+      "mappings": "AAUU;AAVV,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AAEP,OAAOC,gBAAgB;AAEvB,SAASC,YAAY;AAAA,EAAEC;AAAAA,EAAUC;AAAqB,GAAG;AACvD,SACE,uBAAC,SACC;AAAA,2BAAC,SAAI,WAAU,eACb;AAAA,6BAAC,WACC;AAAA,+BAAC,WAAM,MAAK,SAAQ,GAAID,SAAS,cAAc;AAAA,UAAEE,UAAU;AAAA,QAAK,CAAC,GAAG,OAAM,aAA1E;AAAA;AAAA;AAAA;AAAA,eAAmF;AAAA,QAAI;AAAA,QAAG;AAAA,WAD5F;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA,MACA,uBAAC,WACC;AAAA,+BAAC,WAAM,MAAK,SAAQ,GAAIF,SAAS,cAAc;AAAA,UAAEE,UAAU;AAAA,QAAK,CAAC,GAAG,OAAM,aAA1E;AAAA;AAAA;AAAA;AAAA,eAAmF;AAAA,QAAI;AAAA,QAAG;AAAA,WAD5F;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA,SARF;AAAA;AAAA;AAAA;AAAA,WASA;AAAA,IACCD,YAAY,OACX,uBAAC,cAAW,WAAU,+CAAtB;AAAA;AAAA;AAAA;AAAA,WAAiE,IAEjE,uBAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,OAdf;AAAA;AAAA;AAAA;AAAA,SAgBA;AAEJ;AAACE,KApBQJ;AAsBT,eAAeA;AAAY;AAAAK",
       "names": [
         "React",
         "MessageErr",
@@ -9474,15 +9474,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/UI/radioButton/RadioButton.tsx"
+        "D:/react-task/src/components/UI/radioButton/RadioButton.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/UI/radioButton/RadioButton.tsx"
+      "file": "D:/react-task/src/components/UI/radioButton/RadioButton.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c5dfc759637cbc75e0c4f4915241aef6d3ce9f15"
+    "hash": "dca6b575eb8e4fa148518a41f072298bd770dd53"
   },
-  "C:/Users/Anastasia/react-task/src/components/UI/filefield/FileField.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/UI/filefield/FileField.tsx",
+  "D:/react-task/src/components/UI/filefield/FileField.tsx": {
+    "path": "D:/react-task/src/components/UI/filefield/FileField.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -9551,7 +9551,7 @@
         },
         "end": {
           "line": 12,
-          "column": 115
+          "column": 99
         }
       },
       "7": {
@@ -9641,7 +9641,7 @@
         },
         "end": {
           "line": 56,
-          "column": 141
+          "column": 125
         }
       },
       "16": {
@@ -9992,23 +9992,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -10016,26 +10016,26 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        2,
+        6
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -10061,15 +10061,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/UI/filefield/FileField.tsx"
+        "D:/react-task/src/components/UI/filefield/FileField.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/UI/filefield/FileField.tsx"
+      "file": "D:/react-task/src/components/UI/filefield/FileField.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "10a0bd7886f2058e12377709e854a711518f53f5"
+    "hash": "2c37065ab5122e8079b4cd8f7ce35470f4f69e09"
   },
-  "C:/Users/Anastasia/react-task/src/components/form/Form.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/form/Form.tsx",
+  "D:/react-task/src/components/form/Form.tsx": {
+    "path": "D:/react-task/src/components/form/Form.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -10138,7 +10138,7 @@
         },
         "end": {
           "line": 12,
-          "column": 102
+          "column": 86
         }
       },
       "7": {
@@ -10348,7 +10348,7 @@
         },
         "end": {
           "line": 174,
-          "column": 128
+          "column": 112
         }
       },
       "28": {
@@ -10927,35 +10927,35 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 2,
-      "10": 2,
-      "11": 2,
-      "12": 2,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 8,
+      "10": 8,
+      "11": 8,
+      "12": 8,
       "13": 0,
       "14": 0,
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 2,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 0,
-      "28": 0,
+      "18": 8,
+      "19": 4,
+      "20": 3,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 2,
+      "28": 2,
       "29": 0,
       "30": 0,
       "31": 0,
@@ -10963,48 +10963,48 @@
       "33": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
+      "0": 4,
+      "1": 8,
       "2": 0,
-      "3": 1,
-      "4": 0,
+      "3": 3,
+      "4": 2,
       "5": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        2,
+        6
       ],
       "3": [
-        0,
-        2
+        2,
+        6
       ],
       "4": [
-        0,
-        2
+        2,
+        6
       ],
       "5": [
         0,
-        2
+        8
       ],
       "6": [
-        0,
-        2
+        2,
+        6
       ],
       "7": [
-        0,
-        2
+        2,
+        6
       ],
       "8": [
-        1,
+        4,
         0
       ],
       "9": [
@@ -11018,7 +11018,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "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",
+      "mappings": "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",
       "names": [
         "useForm",
         "NameField",
@@ -11061,15 +11061,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/form/Form.tsx"
+        "D:/react-task/src/components/form/Form.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/form/Form.tsx"
+      "file": "D:/react-task/src/components/form/Form.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "94a9c471582bcaf578998ac93154b25e36581c38"
+    "hash": "cb194702f21fc57663a238f716297b1eac71f900"
   },
-  "C:/Users/Anastasia/react-task/src/components/oneUserCard/OneUserCard.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/oneUserCard/OneUserCard.tsx",
+  "D:/react-task/src/components/oneUserCard/OneUserCard.tsx": {
+    "path": "D:/react-task/src/components/oneUserCard/OneUserCard.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -11138,7 +11138,7 @@
         },
         "end": {
           "line": 12,
-          "column": 116
+          "column": 100
         }
       },
       "7": {
@@ -11228,7 +11228,7 @@
         },
         "end": {
           "line": 108,
-          "column": 142
+          "column": 126
         }
       },
       "16": {
@@ -11543,23 +11543,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -11567,22 +11567,22 @@
       "21": 0
     },
     "f": {
-      "0": 1,
+      "0": 4,
       "1": 0,
-      "2": 0,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -11611,15 +11611,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/oneUserCard/OneUserCard.tsx"
+        "D:/react-task/src/components/oneUserCard/OneUserCard.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/oneUserCard/OneUserCard.tsx"
+      "file": "D:/react-task/src/components/oneUserCard/OneUserCard.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8f38398f07209f4c80bbb2f3ceb507e6525f465a"
+    "hash": "d5cc763bbe63cf945e29f68f90c1e3fff522b2df"
   },
-  "C:/Users/Anastasia/react-task/src/components/userCards/UserCards.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/userCards/UserCards.tsx",
+  "D:/react-task/src/components/userCards/UserCards.tsx": {
+    "path": "D:/react-task/src/components/userCards/UserCards.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -11688,7 +11688,7 @@
         },
         "end": {
           "line": 12,
-          "column": 112
+          "column": 96
         }
       },
       "7": {
@@ -11898,7 +11898,7 @@
         },
         "end": {
           "line": 74,
-          "column": 138
+          "column": 122
         }
       },
       "28": {
@@ -12345,35 +12345,35 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 2,
-      "10": 2,
-      "11": 2,
-      "12": 2,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
       "13": 0,
-      "14": 2,
-      "15": 2,
+      "14": 6,
+      "15": 6,
       "16": 0,
       "17": 0,
       "18": 0,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 0,
-      "28": 0,
+      "19": 4,
+      "20": 3,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 2,
+      "28": 2,
       "29": 0,
       "30": 0,
       "31": 0,
@@ -12381,30 +12381,30 @@
       "33": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 2,
+      "0": 4,
+      "1": 6,
+      "2": 6,
       "3": 0,
       "4": 0,
-      "5": 1,
-      "6": 0,
+      "5": 3,
+      "6": 2,
       "7": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        2,
+        6,
         0
       ],
       "3": [
-        1,
+        4,
         0
       ],
       "4": [
@@ -12441,15 +12441,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/userCards/UserCards.tsx"
+        "D:/react-task/src/components/userCards/UserCards.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/userCards/UserCards.tsx"
+      "file": "D:/react-task/src/components/userCards/UserCards.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "9bc4329c07184d8bb7fde4027e9c4e13f1dd3a6a"
+    "hash": "51231de54174cc8f9fc9be1d11fb4b39fd2c175c"
   },
-  "C:/Users/Anastasia/react-task/src/pages/userdata/UserData.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/pages/userdata/UserData.tsx",
+  "D:/react-task/src/pages/userdata/UserData.tsx": {
+    "path": "D:/react-task/src/pages/userdata/UserData.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -12518,7 +12518,7 @@
         },
         "end": {
           "line": 12,
-          "column": 105
+          "column": 89
         }
       },
       "7": {
@@ -12608,7 +12608,7 @@
         },
         "end": {
           "line": 57,
-          "column": 131
+          "column": 115
         }
       },
       "16": {
@@ -12923,23 +12923,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 6,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -12947,22 +12947,22 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 6,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -12986,15 +12986,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/pages/userdata/UserData.tsx"
+        "D:/react-task/src/pages/userdata/UserData.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/pages/userdata/UserData.tsx"
+      "file": "D:/react-task/src/pages/userdata/UserData.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f1784660c8ae7d03e1e7e90479307e26df58a687"
+    "hash": "665f69187033a0361dbfe12ce636fb1f38869acd"
   },
-  "C:/Users/Anastasia/react-task/src/components/navbar/Navbar.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/components/navbar/Navbar.tsx",
+  "D:/react-task/src/components/navbar/Navbar.tsx": {
+    "path": "D:/react-task/src/components/navbar/Navbar.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -13063,7 +13063,7 @@
         },
         "end": {
           "line": 12,
-          "column": 106
+          "column": 90
         }
       },
       "7": {
@@ -13183,7 +13183,7 @@
         },
         "end": {
           "line": 82,
-          "column": 132
+          "column": 116
         }
       },
       "19": {
@@ -13678,26 +13678,26 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 2,
-      "10": 2,
-      "11": 2,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 1,
-      "17": 1,
-      "18": 0,
-      "19": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 14,
+      "10": 14,
+      "11": 14,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 2,
+      "19": 2,
       "20": 0,
       "21": 0,
       "22": 0,
@@ -13705,37 +13705,37 @@
       "24": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 2,
-      "5": 0,
+      "0": 4,
+      "1": 8,
+      "2": 14,
+      "3": 14,
+      "4": 14,
+      "5": 2,
       "6": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        0,
-        2
+        4,
+        10
       ],
       "3": [
-        0,
-        2
+        4,
+        10
       ],
       "4": [
-        2,
-        0
+        6,
+        8
       ],
       "5": [
-        1,
+        4,
         0
       ],
       "6": [
@@ -13749,7 +13749,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAOI,mBAIQ,cAJR;AAPJ,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,SAASC,eAAe;AACxB,SAASC,cAAc;AACvB,OAAO;AAEP,SAASC,SAAS;AAChB,SACE,mCACE;AAAA,2BAAC,YAAO,WAAU,UAChB,iCAAC,SAAI,WAAU,WACb,iCAAC,SAAI,WAAU,eACb;AAAA,6BAAC,WACC,IAAG,KACH,WAAW,CAAC;AAAA,QAAEC;AAAAA,MAAS,MAAOA,WAAW,wBAAwB,gBAClE,uBAHD;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,MACA,uBAAC,WACC,IAAG,SACH,WAAW,CAAC;AAAA,QAAEA;AAAAA,MAAS,MAAOA,WAAW,wBAAwB,gBAClE,qBAHD;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,MACA,uBAAC,WACC,IAAG,QACH,WAAW,CAAC;AAAA,QAAEA;AAAAA,MAAS,MAAOA,WAAW,wBAAwB,gBAClE,qBAHD;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,SAlBF;AAAA;AAAA;AAAA;AAAA,WAmBA,KApBF;AAAA;AAAA;AAAA;AAAA,WAqBA,KAtBF;AAAA;AAAA;AAAA;AAAA,WAuBA;AAAA,IACA,uBAAC,UAAK,WAAU,aACd,iCAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAO,KADT;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,OA3BF;AAAA;AAAA;AAAA;AAAA,SA4BA;AAEJ;AAACC,KAhCQF;AAkCT,eAAeA;AAAO;AAAAG",
+      "mappings": "AAOI,mBAIQ,cAJR;AAPJ,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,SAASC,eAAe;AACxB,SAASC,cAAc;AACvB,OAAO;AAEP,SAASC,SAAS;AAChB,SACE,mCACE;AAAA,2BAAC,YAAO,WAAU,UAChB,iCAAC,SAAI,WAAU,WACb,iCAAC,SAAI,WAAU,eACb;AAAA,6BAAC,WACC,IAAG,KACH,WAAW,CAAC;AAAA,QAAEC;AAAAA,MAAS,MAAOA,WAAW,wBAAwB,gBAAgB,uBAFnF;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,MACA,uBAAC,WACC,IAAG,SACH,WAAW,CAAC;AAAA,QAAEA;AAAAA,MAAS,MAAOA,WAAW,wBAAwB,gBAAgB,qBAFnF;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,MACA,uBAAC,WACC,IAAG,QACH,WAAW,CAAC;AAAA,QAAEA;AAAAA,MAAS,MAAOA,WAAW,wBAAwB,gBAAgB,qBAFnF;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,SAlBF;AAAA;AAAA;AAAA;AAAA,WAmBA,KApBF;AAAA;AAAA;AAAA;AAAA,WAqBA,KAtBF;AAAA;AAAA;AAAA;AAAA,WAuBA;AAAA,IACA,uBAAC,UAAK,WAAU,aACd,iCAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAO,KADT;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,OA3BF;AAAA;AAAA;AAAA;AAAA,SA4BA;AAEJ;AAACC,KAhCQF;AAkCT,eAAeA;AAAO;AAAAG",
       "names": [
         "React",
         "NavLink",
@@ -13760,15 +13760,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/components/navbar/Navbar.tsx"
+        "D:/react-task/src/components/navbar/Navbar.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/components/navbar/Navbar.tsx"
+      "file": "D:/react-task/src/components/navbar/Navbar.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "01042a63b00387aeb99247dea3e5973d834debfb"
+    "hash": "be57d42a99128bbdf52cf0d43fdb4c457efb5a5f"
   },
-  "C:/Users/Anastasia/react-task/src/app/App.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/app/App.tsx",
+  "D:/react-task/src/app/App.tsx": {
+    "path": "D:/react-task/src/app/App.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -13837,7 +13837,7 @@
         },
         "end": {
           "line": 12,
-          "column": 89
+          "column": 73
         }
       },
       "7": {
@@ -13927,7 +13927,7 @@
         },
         "end": {
           "line": 86,
-          "column": 115
+          "column": 99
         }
       },
       "16": {
@@ -14242,23 +14242,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 8,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -14266,22 +14266,22 @@
       "21": 0
     },
     "f": {
-      "0": 1,
-      "1": 2,
-      "2": 0,
+      "0": 4,
+      "1": 8,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        1,
+        4,
         0
       ],
       "1": [
         0,
-        1
+        4
       ],
       "2": [
-        1,
+        4,
         0
       ],
       "3": [
@@ -14310,15 +14310,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/app/App.tsx"
+        "D:/react-task/src/app/App.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/app/App.tsx"
+      "file": "D:/react-task/src/app/App.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "de78066f604e0864ad0ce3297445e27ea81b9a6b"
+    "hash": "119656a8efe753d1ece24095a2f478efa70e67b8"
   },
-  "C:/Users/Anastasia/react-task/src/redux/reducer.ts": {
-    "path": "C:/Users/Anastasia/react-task/src/redux/reducer.ts",
+  "D:/react-task/src/redux/reducer.ts": {
+    "path": "D:/react-task/src/redux/reducer.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -14576,51 +14576,51 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 3,
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 17,
       "5": 0,
-      "6": 3,
+      "6": 17,
       "7": 0,
-      "8": 3,
+      "8": 17,
       "9": 0,
-      "10": 3
+      "10": 17
     },
     "f": {
-      "0": 3
+      "0": 17
     },
     "b": {
       "0": [
-        3
+        12
       ],
       "1": [
         0,
-        3
+        17
       ],
       "2": [
         0,
-        3
+        17
       ],
       "3": [
         0,
-        3
+        17
       ]
     },
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "C:/Users/Anastasia/react-task/src/redux/reducer.ts"
+        "D:/react-task/src/redux/reducer.ts"
       ],
       "mappings": "AAAA;AAAA,EACE;AAAA,EACA;AAAA,EACA;AAAA,OAIK;AAGP,MAAM,eAAgC,CAAC;AACvC,MAAM,cAAwB,CAAC;AAC/B,MAAM,YAAY;AAClB,MAAM,eAAe,EAAE,WAAW,cAAc,UAAU,aAAa,QAAQ,UAAU;AAOzF,wBAAwB,YAAY,QAAQ,cAAc,QAAsB;AAC9E,MAAI,OAAO,SAAS,YAAY;AAC9B,WAAO;AAAA,MACL,GAAG;AAAA,MACH,WAAW,CAAC,GAAG,MAAM,WAAW,GAAG,CAAC,MAAM,QAAQ,CAAC;AAAA,IACrD;AAAA,EACF;AACA,MAAI,OAAO,SAAS,WAAW;AAC7B,WAAO;AAAA,MACL,GAAG;AAAA,MACH,UAAU,OAAO;AAAA,IACnB;AAAA,EACF;AACA,MAAI,OAAO,SAAS,cAAc;AAChC,WAAO;AAAA,MACL,GAAG;AAAA,MACH,QAAQ,OAAO;AAAA,IACjB;AAAA,EACF;AACA,SAAO;AACT;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "287ace49e5d165b5ccbc171290fb367e860cef6f"
+    "hash": "25c1b60f9ae549469ce3fc55ea66431c8710354c"
   },
-  "C:/Users/Anastasia/react-task/src/store.ts": {
-    "path": "C:/Users/Anastasia/react-task/src/store.ts",
+  "D:/react-task/src/store.ts": {
+    "path": "D:/react-task/src/store.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -14671,26 +14671,26 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1
+      "0": 4,
+      "1": 4
     },
     "f": {
-      "0": 1
+      "0": 4
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "C:/Users/Anastasia/react-task/src/store.ts"
+        "D:/react-task/src/store.ts"
       ],
       "mappings": "AAAA,SAAS,sBAAsB;AAG/B,OAAO,iBAAiB;AACxB,SAAS,gBAAgB;AAEzB,MAAM,QAAQ,eAAe;AAAA,EAC3B,SAAS;AAAA,IACP;AAAA,IACA,CAAC,SAAS,WAAW,GAAG,SAAS;AAAA,EACnC;AAAA,EACA,YAAY,CAAC,uBAAuB,mBAAmB,EAAE,OAAO,SAAS,UAAU;AAAA,EACnF,UAAU,QAAQ,IAAI,aAAa;AACrC,CAAC;AAED,eAAe;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "5ea4269156da956279fc412b6147ef02fb4bd4b8"
+    "hash": "1c5cc186531074c49c28265ab8ee3b0cf7ace2c6"
   },
-  "C:/Users/Anastasia/react-task/src/entry-client.tsx": {
-    "path": "C:/Users/Anastasia/react-task/src/entry-client.tsx",
+  "D:/react-task/src/entry-client.tsx": {
+    "path": "D:/react-task/src/entry-client.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -14706,7 +14706,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 1
+      "0": 4
     },
     "f": {},
     "b": {},
@@ -14725,11 +14725,11 @@
         "getElementById"
       ],
       "sources": [
-        "C:/Users/Anastasia/react-task/src/entry-client.tsx"
+        "D:/react-task/src/entry-client.tsx"
       ],
-      "file": "C:/Users/Anastasia/react-task/src/entry-client.tsx"
+      "file": "D:/react-task/src/entry-client.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f8c7ccbd7e56327408d090e777dde2f14e9e0e8f"
+    "hash": "a7cc609e2130e16decc2798e7e6df58ba28eea0b"
   }
 }
