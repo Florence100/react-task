@@ -13,7 +13,9 @@
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": "./src",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": ["cypress"],
   },
-  "include": ["./src/**/*", "styled.d.ts", "server.ts", "prerender.ts"]
+  "include": ["./src/**/*", "styled.d.ts", "server.ts", "prerender.ts"],
+  "exclude": ["./cypress"]
 }
