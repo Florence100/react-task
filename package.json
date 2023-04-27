@@ -14,8 +14,7 @@
     "lint": "eslint src/",
     "lint:write": "eslint src/ --fix",
     "cypress:open": "cypress open",
-    "test:cy": "cross-env NODE_ENV=test cypress open",
-    "test:cy2": "npm run test:clean && npx cypress run --e2e && npx nyc report && npx nyc report --reporter=text-summary"
+    "test:cy2": "npx cypress run --e2e && npx nyc report && npx nyc report --reporter=text-summary"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",

@@ -17,9 +17,9 @@ function Modal(props: IModalProps) {
 
   if (props.modal) {
     return (
-      <div className="modal" onClick={props.onClose}>
+      <div className="modal" data-test="modal" onClick={props.onClose}>
         <div className="modal-content" onClick={(event) => event.stopPropagation()}>
-          <div className="modal-close" onClick={props.onClose}></div>
+          <div className="modal-close" data-test="modal-close" onClick={props.onClose}></div>
           <div className="modal-img">
             <img src={props.url} alt="photo"></img>
           </div>
@@ -37,9 +37,9 @@ function Modal(props: IModalProps) {
     );
   } else {
     return (
-      <div className="modal" onClick={props.onClose}>
+      <div className="modal" data-test="modal" onClick={props.onClose}>
         <div className="modal-content" onClick={(event) => event.stopPropagation()}>
-          <div className="modal-close" onClick={props.onClose}></div>
+          <div className="modal-close" data-test="modal-close" onClick={props.onClose}></div>
           <div className="modal-img">
             <img src={props.url} alt="photo"></img>
           </div>

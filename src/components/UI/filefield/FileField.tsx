@@ -9,6 +9,7 @@ function FileField({ register, isError }: IFileFieldProps) {
       <input
         type="file"
         className="filefield"
+        data-test="filefield"
         accept=".jpg, .jpeg, .png"
         {...register('fileInput', { required: true })}
       ></input>

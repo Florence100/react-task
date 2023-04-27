@@ -27,6 +27,7 @@ function OneFotoCard(props: Photo) {
     <div>
       <div
         className="card"
+        data-test="foto-card"
         onClick={() => {
           setShowModal(true);
           result();
