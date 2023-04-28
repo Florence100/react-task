@@ -18,17 +18,25 @@ describe('The Modal Window', () => {
   it('When you click on the card, a modal window opens', () => {
     cy.visit('/');
 
-    cy.get("[data-test='foto-card']").eq(0).click()
+    cy.get("[data-test='foto-card']").eq(0).click();
     cy.get(".modal").should('be.visible');
   })
 
-  // it('When you click on the cross, a modal window close', () => {
-  //   cy.visit('/');
+  it('When you click on the cross, a modal window close', () => {
+    cy.visit('/');
 
-  //   cy.get("[data-test='foto-card']").eq(0).click()
-  //   cy.get(".modal-close").click();
-  //   cy.get(".modal").should('not.exist');
-  // })
+    cy.get("[data-test='foto-card']").eq(0).click();
+    cy.get(".modal-close").click();
+    cy.get(".modal").should('not.exist');
+  })
+
+  it('Modal window contains correct information', () => {
+    cy.visit('/');
+
+    cy.get("[data-test='foto-card']").eq(0).click();
+    cy.get("img").should('be.visible');
+    cy.get(".modal-info").should('be.visible');
+  })
 })
 
 describe('About Page', () => {
@@ -39,16 +47,16 @@ describe('About Page', () => {
   })
 })
 
-// describe('User Survey Form', () => {
-//   beforeEach(() => {
-//     cy.visit('/user');
-//   })
+describe('User Survey Form', () => {
+  beforeEach(() => {
+    cy.visit('/user');
+  })
 
-//   it('Empty form not submitting', () => {
-//     cy.get("[data-test='form-submit']").click()
-//     cy.get(".message-err").eq(0).should("have.text", "Пожалуйста, убедитесь, что поле заполнено");
-//   })
-// })
+  it('Empty form not submitting', () => {
+    cy.get("[data-test='form-submit']").click()
+    cy.get(".message-err").eq(0).should("have.text", "Пожалуйста, убедитесь, что поле заполнено");
+  })
+})
 
 describe('The Form Page', () => {
   it('The h3 contains the correct text', () => {
