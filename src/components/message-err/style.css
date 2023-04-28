@@ -1,0 +1,6 @@
+.message-err {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    color: red;
+}
