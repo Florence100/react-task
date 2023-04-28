@@ -31,11 +31,12 @@ function Searchbar(props: CardsGoodProps) {
           value={currentSearch}
           className="input"
           placeholder="Искать..."
+          data-test="search"
           onChange={(event) => {
             dispatch(searchValue(event.target.value));
           }}
         />
-        <button className="button" type="submit" disabled={isLoading}>
+        <button className="button" type="submit" disabled={isLoading} data-test="search-button">
           {isLoading ? 'Загружается...' : 'Поиск'}
         </button>
       </form>

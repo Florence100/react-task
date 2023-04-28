@@ -39,11 +39,30 @@ describe('The Modal Window', () => {
   })
 })
 
+describe('The Search', () => {
+  it('The value entered in the search is saved', () => {
+    cy.visit('/');
+
+    cy.get("[data-test='search']").click().type('cat');
+    cy.contains('О нас').click();
+    cy.contains('Главная').click();
+    cy.get("[data-test='search']").should("have.value", "cat");
+  })
+})
+
 describe('About Page', () => {
   it('The h3 contains the correct text', () => {
     cy.visit('/about');
 
     cy.get("h3").eq(0).should("have.text", "Здесь будет страничка о нас");
+  })
+})
+
+describe('404 Page', ()=> {
+  it('When entering an invalid link, a 404 page opens', () => {
+    cy.visit('/react');
+
+    cy.get("h3").should("have.text", "Здесь будет страница 404");
   })
 })
 
